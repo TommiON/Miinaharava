@@ -14,3 +14,4 @@ Kurssin laskaripalautuksia ja harjoitustyö.
 ## harjoitustyö
 
 [vaatimusmäärittely](https://github.com/TommiON/ot-harjoitustyo/blob/master/dokumentointi/vaatimusmäärittely.md)
+[työaikakirjanpito](https://github.com/TommiON/ot-harjoitustyo/blob/master/dokumentointi/tyoaikakirjanpito.md)
