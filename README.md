@@ -8,7 +8,8 @@ Kurssin laskaripalautuksia ja harjoitustyö.
 
 [komentorivi.txt](https://github.com/TommiON/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
-
+## viikko 2
+[testikattavuusgraafi](https://github.com/TommiON/ot-harjoitustyo/blob/master/laskarit/viikko2/testikattavuus.png)
 
 ## harjoitustyö
 
