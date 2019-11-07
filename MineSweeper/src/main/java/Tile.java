@@ -1,14 +1,11 @@
 public class Tile {
-    private final int xPosition, yPosition;
-    private boolean isExposed;
-    private boolean containsMine;
+    private boolean isExposed, containsMine, isFlagged;
     private int neighborsContainingMine;
     
-    public Tile(int xPosition, int yPosition) {
-        this.xPosition = xPosition;
-        this.yPosition = yPosition;
+    public Tile() {
         this.containsMine = false;
         this.isExposed = false;
+        this.isFlagged = false;
         this.neighborsContainingMine = 0;
     }
     
@@ -16,11 +13,14 @@ public class Tile {
         return this.isExposed;
     }
     
-    public void expose() {
+    public boolean exposeMayExplode() {
+        // returns true if EXPLOSION, otherwise false
         this.isExposed = true;
         if(this.containsMine) {
+            return true;
             // BOOM! Game over!
         }
+        return false;
     }
     
     public boolean containsMine() {
@@ -29,5 +29,29 @@ public class Tile {
     
     public void placeMine() {
         this.containsMine = true;
+    }
+    
+    public boolean isFlagged() {
+        return this.isFlagged;
+    }
+    
+    public void flag() {
+        this.isFlagged = true;
+    }
+    
+    public void unflag() {
+        this.isFlagged = false;
+    }
+    
+    public int getNeighborsContainingMine() {
+        return this.neighborsContainingMine;
+    }
+    
+    public void setNeighborsContainingMine(int numberOfMinedNeighbors) {
+        if(numberOfMinedNeighbors > 8) {
+            numberOfMinedNeighbors = 8;
+        }
+        // does this make sense, propably not?
+        this.neighborsContainingMine = numberOfMinedNeighbors;
     }
 }
