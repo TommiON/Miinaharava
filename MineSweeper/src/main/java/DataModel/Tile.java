@@ -1,3 +1,5 @@
+package DataModel;
+
 public class Tile {
     private boolean isExposed, containsMine, isFlagged;
     private int neighborsContainingMine;

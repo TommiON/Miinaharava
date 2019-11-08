@@ -1,3 +1,4 @@
+import DataModel.Tile;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
