@@ -11,15 +11,6 @@ Kurssin laskaripalautuksia ja harjoitustyö.
 
 [sekvenssikaavio 2](https://github.com/TommiON/ot-harjoitustyo/blob/master/laskarit/viikko3/Kuva4.png)
 
-## viikko 2
-[testikattavuusgraafi](https://github.com/TommiON/ot-harjoitustyo/blob/master/laskarit/viikko2/testikattavuus.png)
-
-## viikko 1
-
-[gitlog.txt](https://github.com/TommiON/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
-
-[komentorivi.txt](https://github.com/TommiON/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
-
 ## harjoitustyö
 
 [vaatimusmäärittely](https://github.com/TommiON/ot-harjoitustyo/blob/master/dokumentointi/vaatimusmäärittely.md)
