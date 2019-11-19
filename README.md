@@ -13,7 +13,7 @@ Kurssin laskaripalautuksia ja harjoitustyö.
 
 ## harjoitustyö: MineSweeper
 
-[Maven-projekti](https://github.com/TommiON/ot-harjoitustyo/tree/master/MineSweeper)
+[Maven-projektin päähakemistoon](https://github.com/TommiON/ot-harjoitustyo/tree/master/MineSweeper)
 
 [vaatimusmäärittely](https://github.com/TommiON/ot-harjoitustyo/blob/master/dokumentointi/vaatimusmäärittely.md)
 
