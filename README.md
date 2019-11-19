@@ -11,7 +11,9 @@ Kurssin laskaripalautuksia ja harjoitustyö.
 
 [sekvenssikaavio 2](https://github.com/TommiON/ot-harjoitustyo/blob/master/laskarit/viikko3/Kuva4.png)
 
-## harjoitustyö
+## harjoitustyö: MineSweeper
+
+[Maven-projekti](https://github.com/TommiON/ot-harjoitustyo/tree/master/MineSweeper)
 
 [vaatimusmäärittely](https://github.com/TommiON/ot-harjoitustyo/blob/master/dokumentointi/vaatimusmäärittely.md)
 
