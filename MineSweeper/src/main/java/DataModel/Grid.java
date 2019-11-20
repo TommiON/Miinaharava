@@ -2,7 +2,7 @@ package DataModel;
 
 public class Grid {
     private int width, height, numberOfMines;
-    private Tile[][] tiles;
+    public Tile[][] tiles;
     
     public Grid(int width, int height, int numberOfMines) {
         // this initialiser is propably too long, will later split to delegate methods
@@ -90,26 +90,47 @@ public class Grid {
         this.tiles = new Tile[width][height];
     }
     
-    public String toString() {
+    public String toString(boolean allExposed) {
         String output = "";
-        for(int y = 0; y < this.tiles[0].length; y++) {
-            for(int x = 0; x < this.tiles.length; x++) {
-                if(tiles[x][y].containsMine()) {
-                    output = output + "M";
-                } else {
-                    output = output + tiles[x][y].getNeighborsContainingMine();
-                }
+        
+        if(allExposed) {
+            for(int y = 0; y < tiles[0].length; y++) {
+                for(int x = 0; x < tiles.length; x++) {
+                    if(tiles[x][y].containsMine()) {
+                        output = output + "M";
+                    } else {
+                        output = output + tiles[x][y].getNeighborsContainingMine();
+                    }
                 
-                if(x == this.tiles.length - 1) {
-                    output = output + "\n";
+                    if(x == tiles.length - 1) {
+                        output = output + "\n";
+                    }
+                }
+            }
+        } else {
+            for(int y = 0; y < tiles[0].length; y++) {
+                for(int x = 0; x < tiles.length; x++) {
+                    if(!tiles[x][y].isExposed()) {
+                        output = output + "*";
+                    } else if(tiles[x][y].containsMine()) {
+                        output = output + "M";
+                    } else if(tiles[x][y].isFlagged()) {
+                        output = output + "f";
+                    } else {
+                        output = output + tiles[x][y].getNeighborsContainingMine();
+                    }
+                    
+                    if(x == tiles.length - 1) {
+                        output = output + "\n";
+                    }
                 }
             }
         }
+        
         return output;
     }
     
     public Tile getTile(int x, int y) {
         return this.tiles[x][y];
     }
-    
 }

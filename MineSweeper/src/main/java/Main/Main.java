@@ -1,6 +1,7 @@
 package Main;
 
 import DataModel.Grid;
+import GameEngine.GameRound;
 import UserInterface.TextUI;
 
 // mvn compile exec:java -Dexec.mainClass=Main.Main
@@ -8,8 +9,7 @@ import UserInterface.TextUI;
 public class Main {
     public static void main(String[] args) {
         Grid grid = new Grid(9, 9, 10);
-        TextUI ui = new TextUI(grid);
-        ui.run();
+        GameRound gameround = new GameRound(grid);
+        gameround.run();
     }
-    
 }

@@ -83,8 +83,13 @@ public class GridTest {
     
     @Test
     public void printsCorrectly() {
-        System.out.println(grid.toString());
-        // length should be 9*9 + 9 end-of-line characters
-        assertEquals(90, grid.toString().length());
+        String hiddenGrid = grid.toString(false);
+        System.out.println(hiddenGrid);
+         // length should be 9*9 + 9 end-of-line characters
+        assertEquals(90, hiddenGrid.length());
+        
+        String exposedGrid = grid.toString(true);
+        System.out.println(exposedGrid);
+        assertEquals(90, exposedGrid.length());
     }
 }

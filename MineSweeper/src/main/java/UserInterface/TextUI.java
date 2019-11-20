@@ -1,20 +1,48 @@
 package UserInterface;
 
 import DataModel.Grid;
+import GameEngine.Move;
+import java.util.Scanner;
 
 public class TextUI {
-    static Grid grid;
-    
-    public TextUI(Grid grid) {
-        this.grid = grid;
-    }
-    
-    public static void run() {
+    static Scanner scanner = new Scanner(System.in);
+     
+    public static void welcome() {
         System.out.println("MIINAHARAVA");
         System.out.println("Ei voi vielä pelata, mutta osaa jo generoida pelilaudan.");
         System.out.println("(M = miinoitettu ruutu, numero = miinoitettujen naapureiden määrä)");
         System.out.println("");
-        System.out.println(grid.toString());
+    }
+    
+    public static void printGrid(Grid grid, boolean allExposed) {
+        System.out.println(grid.toString(allExposed));
+    }
+    
+    public static Move getNextMove(Grid grid) {
+        // no input validation, because the text UI is just a temporary hack, will be made into a GUI
+        System.out.println("Seuraava siirto...");
+        System.out.println("Anna x-koordinaatti 1..." + grid.tiles.length + " : ");
+        int x = scanner.nextInt() - 1;
+        
+        System.out.println("Anna y-koordinaatti 1..." + grid.tiles[0].length + " : ");
+        int y = scanner.nextInt() - 1;
+        
+        // something wrong with reading input, flag-putting not working...
+        /*
+        boolean flagging;
+        System.out.println("Pelkkä ENTER = ruutu paljastetaan. JOTAIN TEKSTIÄ = liputetaan: ");
+        String lastInput = scanner.nextLine();
+        if(lastInput.isEmpty()) {
+            flagging = false;
+        } else {
+            flagging = true;
+        }
+        */ 
+        return new Move(x, y, false);
+    }
+    
+    public static void gameOver() {
+        System.out.println("BOOM! Game over!");
     }
     
 }
