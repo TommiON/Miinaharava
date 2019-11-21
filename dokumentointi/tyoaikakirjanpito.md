@@ -6,3 +6,4 @@
 * 8.11, Tile- ja Grid-luokat valmiihkot, Grid-Test-luokka, rakennetta ja tekstikäyttöliittymää, 6 h
 * 19.11. Pom.xml:n riippuvuuksia ja muuta pientä säätöä, 2 h
 * 20.11. GameEngine-paketin luokkien koodausta, 5 h
+* 21.11. GameEngine-paketin luokkien koodausta, MassExpositionHandler toimimaan, 4 h
