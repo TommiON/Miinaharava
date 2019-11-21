@@ -1,7 +1,8 @@
 package DataModel;
 
 public class Grid {
-    private int width, height, numberOfMines;
+    private int width, height;
+    public int tilesYetHidden, numberOfMines;
     public Tile[][] tiles;
     
     public Grid(int width, int height, int numberOfMines) {
@@ -10,6 +11,7 @@ public class Grid {
         this.width = width;
         this.height = height;
         this.numberOfMines = numberOfMines;
+        this.tilesYetHidden = width * height;
         
         // create an empty grid
         this.tiles = new Tile[width][height];
@@ -20,7 +22,7 @@ public class Grid {
         // initialize the grid with non-mined tiles
         for(x = 0; x < this.tiles.length; x++) {
             for(y = 0; y < this.tiles[0].length; y++) {
-                this.tiles[x][y] = new Tile();
+                this.tiles[x][y] = new Tile(x, y);
             }
         }
         
@@ -131,6 +133,10 @@ public class Grid {
     }
     
     public Tile getTile(int x, int y) {
+        if(x < 0) { x = 0; }
+        if(x > width-1) { x = width-1; }
+        if(y < 0) { y = 0; }
+        if(y > height-1) { y = height-1; }
         return this.tiles[x][y];
     }
 }

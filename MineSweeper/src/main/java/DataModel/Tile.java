@@ -3,8 +3,11 @@ package DataModel;
 public class Tile {
     private boolean isExposed, containsMine, isFlagged;
     private int neighborsContainingMine;
+    public int x, y;
     
-    public Tile() {
+    public Tile(int x, int y) {
+        this.x = x;
+        this.y = y;
         this.containsMine = false;
         this.isExposed = false;
         this.isFlagged = false;

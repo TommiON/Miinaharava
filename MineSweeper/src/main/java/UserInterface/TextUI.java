@@ -9,7 +9,7 @@ public class TextUI {
      
     public static void welcome() {
         System.out.println("MIINAHARAVA");
-        System.out.println("Ei voi vielä pelata, mutta osaa jo generoida pelilaudan.");
+        System.out.println("Teksipohjainen versio on debug-moodissa eli näyttää joka kierroksella myös paljastetun pelilaudan.");
         System.out.println("(M = miinoitettu ruutu, numero = miinoitettujen naapureiden määrä)");
         System.out.println("");
     }
@@ -41,8 +41,12 @@ public class TextUI {
         return new Move(x, y, false);
     }
     
-    public static void gameOver() {
-        System.out.println("BOOM! Game over!");
+    public static void gameLost() {
+        System.out.println("BOOM! Kuolit!");
+    }
+    
+    public static void gameWon() {
+        System.out.println("Kaikki miinoittamattomat ruudut paljastettu. VOITIT!");
     }
     
 }
