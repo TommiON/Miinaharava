@@ -1,9 +1,5 @@
 # Miinaharava: vaatimusmäärittely
 
-```shell
-testataan
-```
-
 ## Sovelluksen tarkoitus
 
 Sovellus toteuttaa klassisen Miinaharva-pelin. Sovellus ei sisällä omia sääntölisäyksiä tai -muunnelmia, vaan noudattaa alkuperäisen pelin sääntöjä, jotka [löytyvät esimerkiksi Wikipediasta](https://fi.wikipedia.org/wiki/Miinaharava_(peli)).
@@ -20,7 +16,27 @@ Peli sisältää lisäksi reaaliaikaisen, jatkuvasti näkyvillä olevan kellon, 
 
 Perusversion käyttöliittymä on siinä määrin ilmeinen, että siitä ei ole tässä graafista hahmotelmaa.
 
+### Tämänhetkisen version valmiusaste
+
 _Tällä hetkellä pelin peruslogiikka toteutettu ja sitä voi pelata yksinkertaisella tekstikäyttöliittymällä (paitsi miinoitetuksi epäiltyjen ruutujen liputtaminen, joka vielä toteuttamatta). Graafinen käyttöliittymä ja ajanotto vielä toteuttamatta._
+
+## Komentorivitoiminnot
+
+### testaus
+
+Testien ajaminen
+
+```shell
+mvn test
+```
+
+Testikattavuusraportti (Jacoco):
+
+```shell
+mvn jacoco:report
+```
+
+Kattavuusraportti löytyy tiedostosta _target/site/jacoco/index.html_
 
 ## Mahdollinen jatkokehitys
 
