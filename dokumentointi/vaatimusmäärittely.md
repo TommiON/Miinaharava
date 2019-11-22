@@ -22,13 +22,13 @@ Tällä hetkellä pelin peruslogiikka toteutettu ja sitä voi pelata yksinkertai
 
 ## Komentorivitoiminnot
 
-#### kääntäminen ja ajaminen
+#### Kääntäminen ja ajaminen
 
 ```shell
 mvn compile exec:java -Dexec.maClass=main.Main
 ```
 
-#### testit ja staattinen analyysi
+#### Testit ja staattinen analyysi
 
 Testien ajaminen
 
