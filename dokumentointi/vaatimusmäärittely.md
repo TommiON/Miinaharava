@@ -22,7 +22,7 @@ _Tällä hetkellä pelin peruslogiikka toteutettu ja sitä voi pelata yksinkerta
 
 ## Komentorivitoiminnot
 
-### testaus
+### testit ja staattinen analyysi
 
 Testien ajaminen
 
