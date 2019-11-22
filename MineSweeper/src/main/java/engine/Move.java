@@ -1,9 +1,9 @@
 package engine;
 
 public class Move {
-    private int x;
-    private int y;
-    private boolean flagging;
+    private final int x;
+    private final int y;
+    private final boolean flagging;
     
     public Move(int x, int y, boolean flagging) {
         this.x = x;
