@@ -16,6 +16,8 @@ Peli sisältää lisäksi reaaliaikaisen, jatkuvasti näkyvillä olevan kellon, 
 
 Perusversion käyttöliittymä on siinä määrin ilmeinen, että siitä ei ole tässä graafista hahmotelmaa.
 
+_Tällä hetkellä pelin peruslogiikka toteutettu ja sitä voi pelata yksinkertaisella tekstikäyttöliittymällä (paitsi miinoitetuksi epäiltyjen ruutujen liputtaminen, joka vielä toteuttamatta). Graafinen käyttöliittymä ja ajanotto vielä toteuttamatta._
+
 ## Mahdollinen jatkokehitys
 
 Perusversion valmistuttua sovellusta täydennetään ajan salliessa esimerkiksi seuraavilla toiminnoilla:
