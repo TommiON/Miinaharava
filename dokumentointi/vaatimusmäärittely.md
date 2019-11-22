@@ -38,6 +38,14 @@ mvn jacoco:report
 
 Kattavuusraportti löytyy tiedostosta _target/site/jacoco/index.html_
 
+Koodityylin tarkistus (Checkstyle):
+
+```shell
+mvn jxr:jxr checkstyle:checkstyle
+```
+
+Tyyliraportti löytyy tiedostosta _target/site/checkstyle.html_
+
 ## Mahdollinen jatkokehitys
 
 Perusversion valmistuttua sovellusta täydennetään ajan salliessa esimerkiksi seuraavilla toiminnoilla:
