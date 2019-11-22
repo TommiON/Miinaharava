@@ -7,3 +7,4 @@
 * 19.11. Pom.xml:n riippuvuuksia ja muuta pientä säätöä, 2 h
 * 20.11. GameEngine-paketin luokkien koodausta, 5 h
 * 21.11. GameEngine-paketin luokkien koodausta, MassExpositionHandler toimimaan, 4 h
+* 22.11. Arkkitehtuurikaavio, Checkstyle ja koodin siistintä, lisää testejä, 4 h
