@@ -36,21 +36,17 @@ Testien ajaminen
 mvn test
 ```
 
-Testikattavuusraportti (Jacoco):
+Testikattavuusraportti (Jacoco). Kattavuusraportti löytyy tiedostosta _target/site/jacoco/index.html_
 
 ```shell
 mvn jacoco:report
 ```
 
-Kattavuusraportti löytyy tiedostosta _target/site/jacoco/index.html_
-
-Koodityylin tarkistus (Checkstyle):
+Koodityylin tarkistus (Checkstyle). Tyyliraportti löytyy tiedostosta _target/site/checkstyle.html_
 
 ```shell
 mvn jxr:jxr checkstyle:checkstyle
 ```
-
-Tyyliraportti löytyy tiedostosta _target/site/checkstyle.html_
 
 ## Mahdollinen jatkokehitys
 
