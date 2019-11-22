@@ -1,0 +1,1 @@
+![](MineSweeper_architecture.png)
