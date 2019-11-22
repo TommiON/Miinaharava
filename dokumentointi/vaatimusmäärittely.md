@@ -1,4 +1,8 @@
-# Miinaharava: vaatimusmäärittely
+# Miinaharava
+
+[Maven-projektin päähakemistoon](https://github.com/TommiON/ot-harjoitustyo/tree/master/MineSweeper)
+
+[työaikakirjanpito](https://github.com/TommiON/ot-harjoitustyo/blob/master/dokumentointi/tyoaikakirjanpito.md)
 
 ## Sovelluksen tarkoitus
 
@@ -22,7 +26,7 @@ Tällä hetkellä pelin peruslogiikka toteutettu ja sitä voi pelata yksinkertai
 
 ## Arkkitehtuuri
 
-
+[Arkkitehtuurikaavio](https://github.com/TommiON/ot-harjoitustyo/dokumentointi/vaatimusmäärittely.md)
 
 ## Komentorivitoiminnot
 
