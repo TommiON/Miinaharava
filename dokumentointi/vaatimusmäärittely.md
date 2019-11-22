@@ -16,19 +16,19 @@ Peli sisältää lisäksi reaaliaikaisen, jatkuvasti näkyvillä olevan kellon, 
 
 Perusversion käyttöliittymä on siinä määrin ilmeinen, että siitä ei ole tässä graafista hahmotelmaa.
 
-### Tämänhetkisen version valmiusaste
+#### Tämänhetkisen version valmiusaste
 
 _Tällä hetkellä pelin peruslogiikka toteutettu ja sitä voi pelata yksinkertaisella tekstikäyttöliittymällä (paitsi miinoitetuksi epäiltyjen ruutujen liputtaminen, joka vielä toteuttamatta). Graafinen käyttöliittymä ja ajanotto vielä toteuttamatta._
 
 ## Komentorivitoiminnot
 
-### kääntäminen ja ajaminen
+#### kääntäminen ja ajaminen
 
 ```shell
 mvn compile exec:java -Dexec.maClass=main.Main
 ```
 
-### testit ja staattinen analyysi
+#### testit ja staattinen analyysi
 
 Testien ajaminen
 
