@@ -1,5 +1,9 @@
 # Miinaharava: vaatimusmäärittely
 
+```shell
+testataan
+```
+
 ## Sovelluksen tarkoitus
 
 Sovellus toteuttaa klassisen Miinaharva-pelin. Sovellus ei sisällä omia sääntölisäyksiä tai -muunnelmia, vaan noudattaa alkuperäisen pelin sääntöjä, jotka [löytyvät esimerkiksi Wikipediasta](https://fi.wikipedia.org/wiki/Miinaharava_(peli)).
