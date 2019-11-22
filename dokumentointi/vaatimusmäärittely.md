@@ -26,7 +26,7 @@ Tällä hetkellä pelin peruslogiikka toteutettu ja sitä voi pelata yksinkertai
 
 ## Arkkitehtuuri
 
-[Arkkitehtuurikaavio](https://github.com/TommiON/ot-harjoitustyo/dokumentointi/vaatimusmäärittely.md)
+[Arkkitehtuurikaavio](https://github.com/TommiON/ot-harjoitustyo/blob/master/dokumentointi/arkkitehtuuri.md)
 
 ## Komentorivitoiminnot
 
