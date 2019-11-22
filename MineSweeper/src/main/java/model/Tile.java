@@ -1,4 +1,4 @@
-package DataModel;
+package model;
 
 public class Tile {
     private boolean isExposed, containsMine, isFlagged;
@@ -21,7 +21,7 @@ public class Tile {
     public boolean exposeMayExplode() {
         // returns true if EXPLOSION, otherwise false
         this.isExposed = true;
-        if(this.containsMine) {
+        if (this.containsMine) {
             return true;
             // BOOM! Game over!
         }
@@ -53,7 +53,7 @@ public class Tile {
     }
     
     public void setNeighborsContainingMine(int numberOfMinedNeighbors) {
-        if(numberOfMinedNeighbors > 8) {
+        if (numberOfMinedNeighbors > 8) {
             numberOfMinedNeighbors = 8;
         }
         // does this make sense, propably not?

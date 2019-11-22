@@ -1,8 +1,8 @@
-package Main;
+package main;
 
-import DataModel.Grid;
-import GameEngine.GameRound;
-import UserInterface.TextUI;
+import model.Grid;
+import engine.GameRound;
+import ui.TextUI;
 
 // mvn compile exec:java -Dexec.mainClass=Main.Main
 

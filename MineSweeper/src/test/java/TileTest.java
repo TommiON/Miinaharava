@@ -1,4 +1,4 @@
-import DataModel.Tile;
+import model.Tile;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -22,7 +22,7 @@ public class TileTest {
     
     @Before
     public void setUp() {
-        tile = new Tile();
+        tile = new Tile(6,6);
     }
     
     @After
@@ -47,9 +47,9 @@ public class TileTest {
     
     @Test
     public void exposesAndExplodesCorrectly() {
-        Tile tile1 = new Tile();
-        Tile tile2 = new Tile();
-        Tile tile3 = new Tile();
+        Tile tile1 = new Tile(1,1);
+        Tile tile2 = new Tile(2,1);
+        Tile tile3 = new Tile(3,1);
         tile2.placeMine();
         
         assertEquals(false, tile1.isExposed());

@@ -1,7 +1,7 @@
-package GameEngine;
+package engine;
 
-import DataModel.Grid;
-import UserInterface.TextUI;
+import model.Grid;
+import ui.TextUI;
 
 public class GameRound {
     private boolean gameWon;
@@ -21,7 +21,7 @@ public class GameRound {
     public void run() {
         ui.welcome();
         
-        while(!gameWon && !gameLost) {
+        while (!gameWon && !gameLost) {
             ui.printGrid(grid, false);
             // open grid printed for testing purposes...
             ui.printGrid(grid, true);
@@ -29,13 +29,13 @@ public class GameRound {
             Move nextMove = ui.getNextMove(grid);
             int result = MoveResolver.resolve(grid, nextMove);
             
-            if(result == 2) {
+            if (result == 2) {
                 gameLost = true;
                 ui.printGrid(grid, true);
                 ui.gameLost();
             }
             
-            if(result == 1) {
+            if (result == 1) {
                 gameWon = true;
                 ui.printGrid(grid, true);
                 ui.gameWon();

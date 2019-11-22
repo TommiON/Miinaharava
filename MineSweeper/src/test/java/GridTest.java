@@ -1,5 +1,5 @@
-import DataModel.Tile;
-import DataModel.Grid;
+import model.Tile;
+import model.Grid;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

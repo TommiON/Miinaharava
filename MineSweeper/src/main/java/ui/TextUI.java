@@ -1,7 +1,7 @@
-package UserInterface;
+package ui;
 
-import DataModel.Grid;
-import GameEngine.Move;
+import model.Grid;
+import engine.Move;
 import java.util.Scanner;
 
 public class TextUI {
@@ -9,7 +9,7 @@ public class TextUI {
      
     public static void welcome() {
         System.out.println("MIINAHARAVA");
-        System.out.println("Teksipohjainen versio on debug-moodissa eli näyttää joka kierroksella myös paljastetun pelilaudan.");
+        System.out.println("Teksipohjainen versio on debug-moodissa eli näyttää joka kierroksella myös paljastetun pelikentän.");
         System.out.println("(M = miinoitettu ruutu, numero = miinoitettujen naapureiden määrä)");
         System.out.println("");
     }
