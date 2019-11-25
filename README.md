@@ -33,7 +33,7 @@ Tällä hetkellä pelin peruslogiikka toteutettu ja sitä voi pelata yksinkertai
 #### Kääntäminen ja ajaminen
 
 ```shell
-mvn compile exec:java -Dexec.maClass=main.Main
+mvn compile exec:java -Dexec.mainClass=main.Main
 ```
 
 #### Testit ja staattinen analyysi
