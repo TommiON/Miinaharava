@@ -18,7 +18,7 @@ Sovellus on "anonyymi" yksinpeli eikä sisällä toiminnallisuuksia esimerkiksi 
 
 ## Perusversion tarjoama toiminnallisuus
 
-Perusversio generoi pelin alkaessa 9 x 9 ruudun pelilaudan, johon on satunnaisesti sijoitettu 10 miinaa (_tehty_). Pelaajalla on Miinaharava-sääntöjen mukaisesti käytössään kaksi toimintoa, tyhjäksi arvaamansa ruudun paljastaminen (_tehty_) ja miinoitetuksi arvaamansa ruudun merkitseminen. Nämä toiminnot toteutetaan todennäköisesti hiiren vasemman ja oikean napin painalluksina. (_Tällä hetkellä käytössä väliaikainen ja melkoisen kömpelö tekstikäyttöliittymä._) Peli päättyy, kun miina räjähtää tai kaikki miinoitetut ruudut on paljastettu. (_tehty_)
+Perusversio generoi pelin alkaessa 9 x 9 ruudun pelilaudan, johon on satunnaisesti sijoitettu 10 miinaa _(tehty)_. Pelaajalla on Miinaharava-sääntöjen mukaisesti käytössään kaksi toimintoa, tyhjäksi arvaamansa ruudun paljastaminen _(tehty)_ ja miinoitetuksi arvaamansa ruudun merkitseminen. Nämä toiminnot toteutetaan todennäköisesti hiiren vasemman ja oikean napin painalluksina. _(Tällä hetkellä käytössä väliaikainen ja melkoisen kömpelö tekstikäyttöliittymä)_ Peli päättyy, kun miina räjähtää tai kaikki miinoitetut ruudut on paljastettu. _(tehty)_
 
 Peli sisältää lisäksi reaaliaikaisen, jatkuvasti näkyvillä olevan kellon, joka käynnistyy pelin alkaessa ja pysähtyy sen päättyessä.
 
