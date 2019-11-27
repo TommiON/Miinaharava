@@ -11,7 +11,13 @@ public class MoveResolver {
         // 2 = game lost
         
         Tile focusTile = grid.getTile(move.getX(), move.getY());
+        
         if (focusTile.isExposed()) {
+            return 0;
+        }
+        
+        if (move.isFlagging()) {
+            focusTile.flag();
             return 0;
         }
         

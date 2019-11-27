@@ -1,6 +1,8 @@
 package engine;
 
+import java.time.LocalDateTime;
 import model.Grid;
+import model.Timer;
 import ui.TextUI;
 
 public class GameRound {
@@ -21,6 +23,8 @@ public class GameRound {
     public void run() {
         ui.welcome();
         
+        Timer timer = new Timer();
+        
         while (!gameWon && !gameLost) {
             ui.printGrid(grid, false);
             // open grid printed for testing purposes...
@@ -40,6 +44,8 @@ public class GameRound {
                 ui.printGrid(grid, true);
                 ui.gameWon();
             }
+            
+            System.out.println("Aikaa kului: " + timer.getElapsedTime() + " sekuntia");
             
             turn++;
         }

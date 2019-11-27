@@ -23,7 +23,6 @@ public class Tile {
         this.isExposed = true;
         if (this.containsMine) {
             return true;
-            // BOOM! Game over!
         }
         return false;
     }
@@ -53,10 +52,6 @@ public class Tile {
     }
     
     public void setNeighborsContainingMine(int numberOfMinedNeighbors) {
-        if (numberOfMinedNeighbors > 8) {
-            numberOfMinedNeighbors = 8;
-        }
-        // does this make sense, propably not?
         this.neighborsContainingMine = numberOfMinedNeighbors;
     }
 }

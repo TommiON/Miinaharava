@@ -6,8 +6,6 @@ public class Grid {
     public Tile[][] tiles;
     
     public Grid(int width, int height, int numberOfMines) {
-        // this initialiser is propably too long, will later split to delegate methods
-        
         this.width = width;
         this.height = height;
         this.numberOfMines = numberOfMines;
@@ -112,12 +110,12 @@ public class Grid {
         } else {
             for (int y = 0; y < tiles[0].length; y++) {
                 for (int x = 0; x < tiles.length; x++) {
-                    if (!tiles[x][y].isExposed()) {
+                    if (!tiles[x][y].isExposed() && !tiles[x][y].isFlagged()) {
                         output = output + "*";
-                    } else if (tiles[x][y].containsMine()) {
+                    } else if (tiles[x][y].containsMine() && !tiles[x][y].isFlagged()) {
                         output = output + "M";
                     } else if (tiles[x][y].isFlagged()) {
-                        output = output + "f";
+                        output = output + "F";
                     } else {
                         output = output + tiles[x][y].getNeighborsContainingMine();
                     }

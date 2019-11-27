@@ -27,18 +27,17 @@ public class TextUI {
         System.out.println("Anna y-koordinaatti 1..." + grid.tiles[0].length + " : ");
         int y = scanner.nextInt() - 1;
         
-        // something wrong with reading input, flag-putting not working...
-        /*
-        boolean flagging;
-        System.out.println("Pelkkä ENTER = ruutu paljastetaan. JOTAIN TEKSTIÄ = liputetaan: ");
-        String lastInput = scanner.nextLine();
-        if(lastInput.isEmpty()) {
-            flagging = false;
+        boolean placeFlag;
+        String flagInput = scanner.nextLine();
+        System.out.println("Kirjoita jotain ja paina ENTER jos haluat äskeiseen ruutuun lipun. Jos pelkkä ENTER = ei lippua");
+        flagInput = scanner.nextLine();
+        if(flagInput.isEmpty()) {
+            placeFlag = false;
         } else {
-            flagging = true;
+            placeFlag = true;
         }
-        */ 
-        return new Move(x, y, false);
+        
+        return new Move(x, y, placeFlag);
     }
     
     public static void gameLost() {
