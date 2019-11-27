@@ -18,22 +18,18 @@ Sovellus on "anonyymi" yksinpeli eikä sisällä toiminnallisuuksia esimerkiksi 
 
 ## Perusversion tarjoama toiminnallisuus
 
-Perusversio generoi pelin alkaessa 9 x 9 ruudun pelilaudan, johon on satunnaisesti sijoitettu 10 miinaa. Pelaajalla on Miinaharava-sääntöjen mukaisesti käytössään kaksi toimintoa, tyhjäksi arvaamansa ruudun paljastaminen ja miinoitetuksi arvaamansa ruudun merkitseminen. Nämä toiminnot toteutetaan todennäköisesti hiiren vasemman ja oikean napin painalluksina.
+Perusversio generoi pelin alkaessa 9 x 9 ruudun pelilaudan, johon on satunnaisesti sijoitettu 10 miinaa _(tehty)_. Pelaajalla on Miinaharava-sääntöjen mukaisesti käytössään kaksi toimintoa, tyhjäksi arvaamansa ruudun paljastaminen _(tehty)_ ja miinoitetuksi arvaamansa ruudun merkitseminen. Nämä toiminnot toteutetaan todennäköisesti hiiren vasemman ja oikean napin painalluksina. _(Tällä hetkellä käytössä väliaikainen ja melkoisen kömpelö tekstikäyttöliittymä)_ Jos paljastetaan ruutu, jonka yhdessäkään naapurissa ei ole miinaa, peli paljastaa kaikki siihen yhteydessä olevat ruudut, joissa ei myöskään ole miinaa, sekä tämän alueen reunoilla olevat miinattomat ruudut _(tehty)_ Peli päättyy, kun miina räjähtää tai kaikki miinoitetut ruudut on paljastettu. _(tehty)_
 
 Peli sisältää lisäksi reaaliaikaisen, jatkuvasti näkyvillä olevan kellon, joka käynnistyy pelin alkaessa ja pysähtyy sen päättyessä.
 
-Perusversion käyttöliittymä on siinä määrin ilmeinen, että siitä ei ole tässä graafista hahmotelmaa.
-
-#### Tämänhetkisen version valmiusaste
-
-Tällä hetkellä pelin peruslogiikka toteutettu ja sitä voi pelata yksinkertaisella tekstikäyttöliittymällä (paitsi miinoitetuksi epäiltyjen ruutujen liputtaminen, joka vielä toteuttamatta). Graafinen käyttöliittymä ja ajanotto vielä toteuttamatta.
+Perusversion käyttöliittymä on siinä määrin ilmeinen, että siitä ei ole tässä graafista hahmotelmaa. 
 
 ## Komentorivitoiminnot
 
 #### Kääntäminen ja ajaminen
 
 ```shell
-mvn compile exec:java -Dexec.maClass=main.Main
+mvn compile exec:java -Dexec.mainClass=main.Main
 ```
 
 #### Testit ja staattinen analyysi
