@@ -8,6 +8,7 @@
 * 20.11. GameEngine-paketin luokkien koodausta, 5 h
 * 21.11. GameEngine-paketin luokkien koodausta, MassExpositionHandler toimimaan, 4 h
 * 22.11. Arkkitehtuurikaavio, Checkstyle ja koodin siistintä, lisää testejä, 4 h
-* 25.11. Liputustoiminnon ja ajanoton implementointi, 4 h (ei vielä Githubissa)
+* 25.11. Liputustoiminnon ja ajanoton implementointi, 4 h
+* 27.11. Pientä säätöä siellä täällä koodissa, graafisen käyttöliittymän aloittelua, 2h
 
 * yht. 28 h
