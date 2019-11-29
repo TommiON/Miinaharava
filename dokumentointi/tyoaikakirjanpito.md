@@ -10,5 +10,7 @@
 * 22.11. Arkkitehtuurikaavio, Checkstyle ja koodin siistintä, lisää testejä, 4 h
 * 25.11. Liputustoiminnon ja ajanoton implementointi, 4 h
 * 27.11. Pientä säätöä siellä täällä koodissa, graafisen käyttöliittymän aloittelua, 2h
+* 28.11. JDK:n vaihtaminen ja troubleshooting, 4h
 
-* yht. 28 h
+
+* yht. 32 h
