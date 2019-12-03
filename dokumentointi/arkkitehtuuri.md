@@ -1,7 +1,7 @@
-## Architecture overview
+## Yleiskuva arkkitehtuurista
 
 ![](MineSweeper_architecture.png)
 
-## Example of a sequence
+## Esimerkki sekvenssistä
 
 ![](MineSweeper_sequence.png)
