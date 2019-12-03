@@ -17,7 +17,7 @@ public class TileDisplayManager {
         Tile tile = grid.getTile(x, y);
         String label;
         
-        if(tile.containsMine()) {
+        if (tile.containsMine()) {
             label = "M";
         } else {
             label = Integer.toString(tile.getNeighborsContainingMine());

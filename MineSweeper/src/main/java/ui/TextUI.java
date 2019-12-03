@@ -32,7 +32,7 @@ public class TextUI {
         String flagInput = scanner.nextLine();
         System.out.println("Pelkkä ENTER = ei lippua. Mitä tahansa tekstiä ja ENTER = lippu äskeiseen ruutuun");
         flagInput = scanner.nextLine();
-        if(flagInput.isEmpty()) {
+        if (flagInput.isEmpty()) {
             placeFlag = false;
         } else {
             placeFlag = true;
