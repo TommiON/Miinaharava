@@ -11,6 +11,7 @@
 * 25.11. Liputustoiminnon ja ajanoton implementointi, 4 h
 * 27.11. Pientä säätöä siellä täällä koodissa, graafisen käyttöliittymän aloittelua, 2h
 * 28.11. JDK:n vaihtaminen ja troubleshooting, 4h
+* 2.12. Graafisen käyttöliittymän koodausta, 4h
+* 3.12. Testejä, sekvenssikaavio, 4h
 
-
-* yht. 32 h
+Yht. 40 h
