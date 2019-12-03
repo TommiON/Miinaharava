@@ -4,7 +4,7 @@
 
 [Työaikakirjanpito](https://github.com/TommiON/ot-harjoitustyo/blob/master/dokumentointi/tyoaikakirjanpito.md)
 
-[MineSweeper pre-release](https://github.com/TommiON/ot-harjoitustyo/releases)
+[MineSweeper pre-release](https://github.com/TommiON/ot-harjoitustyo/releases/tag/viikko5)
 
 ## Sovelluksen tarkoitus
 
