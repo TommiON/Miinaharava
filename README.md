@@ -4,6 +4,8 @@
 
 [Työaikakirjanpito](https://github.com/TommiON/ot-harjoitustyo/blob/master/dokumentointi/tyoaikakirjanpito.md)
 
+[MineSweeper pre-release](https://github.com/TommiON/ot-harjoitustyo/releases)
+
 ## Sovelluksen tarkoitus
 
 Sovellus toteuttaa klassisen Miinaharva-pelin. Sovellus ei sisällä omia sääntölisäyksiä tai -muunnelmia, vaan noudattaa alkuperäisen pelin sääntöjä, jotka [löytyvät esimerkiksi Wikipediasta](https://fi.wikipedia.org/wiki/Miinaharava_(peli)).
@@ -30,6 +32,12 @@ Perusversion käyttöliittymä on siinä määrin ilmeinen, että siitä ei ole 
 
 ```shell
 mvn compile exec:java -Dexec.mainClass=main.Main
+```
+
+Suoritettavan .jar-tiedoston generoiminen
+
+```shell
+mvn package
 ```
 
 #### Testit ja staattinen analyysi
