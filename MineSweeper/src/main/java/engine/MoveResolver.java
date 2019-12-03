@@ -1,7 +1,7 @@
 package engine;
 
 import model.Grid;
-import model.Tile;
+import model.Tile; 
 
 public class MoveResolver {
     public static int resolve(Grid grid, Move move) {

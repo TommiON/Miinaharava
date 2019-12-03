@@ -1,7 +1,7 @@
 package model;
 
 public class Grid {
-    private int width, height;
+    public int width, height;
     public int tilesYetHidden, numberOfMines;
     public Tile[][] tiles;
     
