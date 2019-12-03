@@ -3,10 +3,10 @@ package model;
 import java.time.LocalDateTime;
 import static java.time.temporal.ChronoUnit.SECONDS;
 
-public class Timer {
+public class Timing {
     private LocalDateTime start;
     
-    public Timer() {
+    public Timing() {
         start = LocalDateTime.now();
     }
     

@@ -1,7 +1,7 @@
 package engine;
 
 import model.Grid;
-import model.Timer;
+import model.Timing;
 import ui.TextUI;
 
 public class GameRound {
@@ -22,12 +22,12 @@ public class GameRound {
     public void run() {
         ui.welcome();
         
-        Timer timer = new Timer();
+        Timing timing = new Timing();
         
         while (!gameWon && !gameLost) {
             ui.printGrid(grid, false);
-            // open grid printed for testing purposes...
-            ui.printGrid(grid, true);
+            // fully exposed grid can be printed for testing purposes...
+            // ui.printGrid(grid, true);
             
             Move nextMove = ui.getNextMove(grid);
             int result = MoveResolver.resolve(grid, nextMove);
@@ -44,7 +44,7 @@ public class GameRound {
                 ui.gameWon();
             }
             
-            System.out.println("Aikaa kului: " + timer.getElapsedTime() + " sekuntia");
+            System.out.println("Aikaa kului: " + timing.getElapsedTime() + " sekuntia");
             
             turn++;
         }

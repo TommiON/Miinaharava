@@ -6,19 +6,22 @@ import model.Grid;
 
 public class GridDisplayManager {
     Grid grid;
-    GridPane displayGrid;
-    
+    TileDisplayManager tileDisplayManager;
+    GridPane gridDisplay;
+   
     public GridDisplayManager(Grid grid) {
         this.grid = grid;
-        displayGrid = new GridPane();
+        tileDisplayManager = new TileDisplayManager(grid);
+        this.gridDisplay = new GridPane();
     }
     
     public GridPane getGrid() {
-        for(int y = 1; y <= grid.height; y++) {
-            for(int x = 1; x <= grid.width; x++) {
-                displayGrid.add(new Button("*"), x, y);
+        for (int y = 0; y < grid.height; y++) {
+            for (int x = 0; x < grid.width; x++) {
+                // gridDisplay.add(new Button("x"), x, y);
+                gridDisplay.add(tileDisplayManager.getTile(x, y), x, y);
             }
         }
-        return displayGrid;
+        return gridDisplay;
     }
 }

@@ -9,7 +9,7 @@ public class TextUI {
      
     public static void welcome() {
         System.out.println("MIINAHARAVA");
-        System.out.println("Teksipohjainen versio on debug-moodissa eli näyttää joka kierroksella myös paljastetun pelikentän.");
+        // System.out.println("Teksipohjainen versio on debug-moodissa eli näyttää joka kierroksella myös paljastetun pelikentän.");
         System.out.println("(M = miinoitettu ruutu, numero = miinoitettujen naapureiden määrä)");
         System.out.println("");
     }
@@ -20,6 +20,7 @@ public class TextUI {
     
     public static Move getNextMove(Grid grid) {
         // no input validation, because the text UI is just a temporary hack, will be made into a GUI
+        
         System.out.println("Seuraava siirto...");
         System.out.println("Anna x-koordinaatti 1..." + grid.tiles.length + " : ");
         int x = scanner.nextInt() - 1;
@@ -29,7 +30,7 @@ public class TextUI {
         
         boolean placeFlag;
         String flagInput = scanner.nextLine();
-        System.out.println("Kirjoita jotain ja paina ENTER jos haluat äskeiseen ruutuun lipun. Jos pelkkä ENTER = ei lippua");
+        System.out.println("Pelkkä ENTER = ei lippua. Mitä tahansa tekstiä ja ENTER = lippu äskeiseen ruutuun");
         flagInput = scanner.nextLine();
         if(flagInput.isEmpty()) {
             placeFlag = false;

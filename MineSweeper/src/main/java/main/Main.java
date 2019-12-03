@@ -13,9 +13,11 @@ public class Main {
     public static void main(String[] args) {
         Grid grid = new Grid(9, 9, 10);
         GameRound gameround = new GameRound(grid);
-        MainWindow window = new MainWindow();
         
+        MainWindow window = new MainWindow();
+        // Graphical User Interface disabled for now, the statement below will run it later
         // window.run(grid);
+        
         gameround.run();
     }
 }
