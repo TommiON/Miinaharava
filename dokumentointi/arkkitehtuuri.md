@@ -1,5 +1,5 @@
 ![](MineSweeper_architecture.png)
 
-#Example of a sequence
+## Example of a sequence
 
 ![](MineSweeper_sequence.png)
