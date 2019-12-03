@@ -1,3 +1,5 @@
+## Architecture overview
+
 ![](MineSweeper_architecture.png)
 
 ## Example of a sequence
