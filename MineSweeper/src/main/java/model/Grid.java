@@ -1,3 +1,7 @@
+/**
+ * This class initialises and manages the grid of tiles
+ */
+
 package model;
 
 public class Grid {
@@ -49,6 +53,14 @@ public class Grid {
         }
         
         // finally calculate the number of mined neighbors for each tile
+        calculateMinedNeighbors();
+    }
+    
+    /**
+     * internal helper method to calculate number of surrounding mines for each tile
+     */
+    private void calculateMinedNeighbors() {
+        int x, y;
         for (x = 0; x < this.tiles.length; x++) {
             for (y = 0; y < this.tiles[0].length; y++) {
                 int minedNeighbors = 0;
@@ -78,17 +90,34 @@ public class Grid {
                 }
                 tiles[x][y].setNeighborsContainingMine(minedNeighbors);      
             }
+        }   
+    }
+    
+    /**
+     * static initialiser for non-random grids, used for testing, not for actual games
+     * @param staticGrid the grid to be used in String form (not validated, expected to be valid)
+     */
+    public Grid(String staticGrid) {
+        this.tiles = new Tile[9][9];
+        this.width = 9;
+        this.height = 9;
+        this.tilesYetHidden = 9 * 9;
+        this.numberOfMines = 10;
+        
+        int index = 0;
+        for (int x = 0; x < this.tiles.length; x++) {
+            for (int y = 0; y < this.tiles[0].length; y++) {
+                this.tiles[x][y] = new Tile(x, y);
+                if (staticGrid.charAt(index) == 'M') {
+                    tiles[x][y].placeMine();
+                } else {
+                    tiles[x][y].setNeighborsContainingMine(Character.getNumericValue(staticGrid.charAt(index)));
+                }
+                index++;
+            }
         }
     }
     
-    public Grid(String staticGrid) {
-        // static initialiser for non-random grids, received as a String parameter
-        // - this is for testing, not for actual games
-        this.width = 0;
-        this.height = 0;
-        this.numberOfMines = 0;
-        this.tiles = new Tile[width][height];
-    }
     
     public String toString(boolean allExposed) {
         String output = "";

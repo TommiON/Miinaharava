@@ -1,3 +1,7 @@
+/**
+ * This class is responsible for managing and looping the run of game
+ */
+
 package engine;
 
 import model.Grid;
@@ -19,15 +23,18 @@ public class GameRound {
         ui = new TextUI();
     }
     
+    /**
+     * start a round, will continue until game either lost or won
+     */
     public void run() {
         ui.welcome();
         
         Timing timing = new Timing();
-        
+                
         while (!gameWon && !gameLost) {
             ui.printGrid(grid, false);
             // fully exposed grid can be printed for testing purposes...
-            // ui.printGrid(grid, true);
+            ui.printGrid(grid, true);
             
             Move nextMove = ui.getNextMove(grid);
             int result = MoveResolver.resolve(grid, nextMove);

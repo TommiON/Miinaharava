@@ -15,7 +15,6 @@ public class Main {
         GameRound gameround = new GameRound(grid);
         
         MainWindow window = new MainWindow();
-        // Graphical User Interface disabled for now, the statement below will run it later
         // window.run(grid);
         
         gameround.run();

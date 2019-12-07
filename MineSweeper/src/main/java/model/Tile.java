@@ -1,3 +1,8 @@
+/**
+ * This class models a single tile in the grid and provides functionality
+ * that concers a single tile
+ */
+
 package model;
 
 public class Tile {
@@ -31,6 +36,9 @@ public class Tile {
         return this.containsMine;
     }
     
+    /**
+     * places a mine in this tile, i.e sets containsMine=true
+     */
     public void placeMine() {
         this.containsMine = true;
     }
@@ -51,6 +59,10 @@ public class Tile {
         return this.neighborsContainingMine;
     }
     
+    /**
+     * sets a value indicating how many of the neighboring tiles contain a mine
+     * @param numberOfMinedNeighbors 
+     */
     public void setNeighborsContainingMine(int numberOfMinedNeighbors) {
         this.neighborsContainingMine = numberOfMinedNeighbors;
     }

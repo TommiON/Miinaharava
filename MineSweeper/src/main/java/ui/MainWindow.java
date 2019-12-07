@@ -3,6 +3,7 @@ package ui;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import model.Grid;
@@ -14,10 +15,14 @@ public class MainWindow extends Application {
     public void start(Stage stage) {
         stage.setTitle("Miinaharava");
         
+        BorderPane masterLayout = new BorderPane();
+        
         GridDisplayManager gridDisplayManager = new GridDisplayManager(grid);
         GridPane gridDisplay = gridDisplayManager.getGrid();
         
-        Scene scene = new Scene(gridDisplay);
+        masterLayout.setCenter(gridDisplay);
+        
+        Scene scene = new Scene(masterLayout);
          
         stage.setScene(scene);
        

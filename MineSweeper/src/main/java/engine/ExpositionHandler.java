@@ -6,13 +6,18 @@ import java.util.ArrayDeque;
 
 public class ExpositionHandler {
    
+    /**
+     * check surroundings of the tile using width-first graph search, exposes 
+     * continuous areas of zero-tiles
+     * @param grid 
+     * @param x starting position, x-coordinate
+     * @param y starting position, y-coordinate
+     */
     public static void expose(Grid grid, int x, int y) {
         
         grid.getTile(x, y).exposeMayExplode();
         grid.tilesYetHidden--;
-       
-        // check surroundings of the tile using width-first graph search
-        
+               
         ArrayDeque<Tile> queue = new ArrayDeque<>();
         queue.add(grid.getTile(x, y));
         
