@@ -36,6 +36,14 @@ public class MoveResolverTest {
     }
     
     @Test
+    public void gameContinuesIfUnexposedEmptyTilesLeft() {
+        Move move = new Move(0, 0, false);
+        int result = MoveResolver.resolve(grid, move);
+        // grid.tilesYetHidden > 0 at this point
+        assertEquals(0, result);
+    }
+    
+    @Test
     public void exposingMinedTileEndsGame() {
         Move move = new Move(0, 3, false);
         int result = MoveResolver.resolve(grid, move);
