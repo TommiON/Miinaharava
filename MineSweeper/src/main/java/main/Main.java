@@ -12,8 +12,8 @@ import ui.MainWindow;
 public class Main {
     public static void main(String[] args) {
         Grid grid = new Grid(9, 9, 10); 
-        GameController controller = new GameController();
         MainWindow window = new MainWindow();
+        GameController controller = new GameController(window);
         window.run(grid, controller);
     }
 }

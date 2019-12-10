@@ -1,6 +1,7 @@
 package engine;
 
 import model.Timing;
+import ui.MainWindow;
 
 /**
  * This class is the "main loop" of the application,
@@ -8,24 +9,28 @@ import model.Timing;
  */
 public class GameController {
     private Timing timing = new Timing();
+    private MainWindow window;
+    
+    public GameController(MainWindow window) {
+        this.window = window;
+    }
     
     /**
      * This method is called after each user action in the GUI
      * @param resultFromMove int value received from MoveResolver, inidicating what happened when a tile was exposed
+     * 0 = continues, 1 = game won, 2 = game lost
      */
     public void newRound(int resultFromMove) {
         if(resultFromMove == 1) {
-            // handle endgame
-            System.out.println("Won!");
-            long elapsedTime = timing.getElapsedTime();
+            window.updateStatus(true, false, timing.getElapsedTime());
+             // TODO: handle endgame
         }
         
         if(resultFromMove == 2) {
-            // handle endgame
-            System.out.println("Lost!");
-            long elapsedTime = timing.getElapsedTime();
+            window.updateStatus(false, true, timing.getElapsedTime());
+            // TODO: handle endgame
         }
-        
+                
         // TODO: Timing functionality here (call in intervals of one second)
     }
     
