@@ -16,8 +16,12 @@ Lisäksi sovelluksessa on _Main_-paketti, joka sisältää vain _Main_-luokan ja
 
 
 
-## Esimerkki sekvenssistä
+## Esimerkki luokkien toiminnasta
 
-
+Pelin keskeisin tapahtumaketju on käyttäjän siirron lukeminen ja käsittely. Tekstipohjaisessa versiossa tämä oli toteuttu silmukkana _GameRound_-luokassa:
 
 ![](MineSweeper_sequence.png)
+
+Graafisessa versiossa arkkitehtuuri on muutettu reaktiiviseksi: aloite tulee _TileDisplayManager_-luokalta, joka rekisteröi käyttäjän klikkauksen, luo _Move_-olion ja informoi tästä _GameController_-luokkaa:
+
+![](MineSweeper_sequence2.png)
