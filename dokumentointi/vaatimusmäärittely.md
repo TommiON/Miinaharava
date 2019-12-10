@@ -8,11 +8,12 @@ Sovellus on "anonyymi" yksinpeli eikä sisällä toiminnallisuuksia esimerkiksi 
 
 _Yleistä valmiusasteesta: sovellus on ottanut väliaikaisesti takapakkia toiminnallisesti, koska kaikkia sovelluslogiikan osia ei ole vielä siirretty graafiseen käyttöliittymään. Kaikki logiikka on kuitenkin olemassa ja toimii tekstikäyttöliittymässä (joka nykyversiossa oletusarvoisesti ei käynnisty)._
 
-* Perusversio generoi pelin alkaessa 9 x 9 ruudun pelilaudan, johon on satunnaisesti sijoitettu 10 miinaa. _Tehty_
+* Perusversio generoi pelin alkaessa 9 x 9 ruudun pelilaudan, johon on satunnaisesti sijoitettu 10 miinaa. _Tehty._
 * Perusversion käyttöliittymä on siinä määrin ilmeinen, että siitä ei ole tässä graafista hahmotelmaa. _Käyttöliittymä tällä hetkellä ruma ja vaillinainen, sisältää vasta itse peliruudukon ja statustekstin._
 * Pelaajalla on Miinaharava-sääntöjen mukaisesti käytössään kaksi toimintoa, tyhjäksi arvaamansa ruudun paljastaminen ja miinoitetuksi arvaamansa ruudun merkitseminen. Nämä toiminnot toteutetaan hiiren vasemman ja oikean napin painalluksina. _Jo käytöstä poistetussa teksikäyttöliittymässä toimivat molemmat, graafisessa käyttöliittymässä vasta ruudun paljastaminen._
 * Jos paljastetulla ruudulla ei ole yhtään miinoitettua naapuria, paljastetaan kaikki siihen yhteydessä olevat nollaruudut ja tämän alueen reunalla olevat ei-miinoitetut ruudut. _Toiminnallisuus olemassa ja toimii tekstikäyttöliittymässä, mutta ei vielä graafisessa käyttöliittymässä._
 * Peli sisältää lisäksi reaaliaikaisen, jatkuvasti näkyvillä olevan kellon, joka käynnistyy pelin alkaessa ja pysähtyy sen päättyessä. _Tällä hetkellä sovellus ottaa aikaa ja tulostaa sen pelin päättyessä. Lopullisessa versiossa reaaliaikainen kello._
+* Peli päättyy, kun kaikki miinoittamattomat ruudut on paljastettu (voitto) tai paljastetaan ruutu, jossa on miina (häviö). _Tehty._
 
 ## Mahdollinen jatkokehitys
 
