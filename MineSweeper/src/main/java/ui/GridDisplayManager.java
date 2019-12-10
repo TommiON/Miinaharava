@@ -1,5 +1,6 @@
 package ui;
 
+import engine.GameController;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 import model.Grid;
@@ -9,9 +10,9 @@ public class GridDisplayManager {
     TileDisplayManager tileDisplayManager;
     GridPane gridDisplay;
    
-    public GridDisplayManager(Grid grid) {
+    public GridDisplayManager(Grid grid, GameController controller) {
         this.grid = grid;
-        tileDisplayManager = new TileDisplayManager(grid);
+        tileDisplayManager = new TileDisplayManager(grid, controller);
         this.gridDisplay = new GridPane();
     }
     

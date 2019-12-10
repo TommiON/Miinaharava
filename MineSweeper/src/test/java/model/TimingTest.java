@@ -1,3 +1,5 @@
+package model;
+
 import java.time.LocalDateTime;
 import static java.time.temporal.ChronoUnit.SECONDS;
 import java.util.TimerTask;

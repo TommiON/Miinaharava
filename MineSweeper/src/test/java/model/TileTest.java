@@ -1,3 +1,5 @@
+package model;
+
 import model.Tile;
 import org.junit.After;
 import org.junit.AfterClass;

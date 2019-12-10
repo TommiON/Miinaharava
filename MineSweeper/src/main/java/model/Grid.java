@@ -172,6 +172,7 @@ public class Grid {
         if (y > height - 1) {
             y = height - 1;
         }
+        
         return this.tiles[x][y];
     }
 }

@@ -1,3 +1,7 @@
+package engine;
+
+import engine.Move;
+import engine.MoveResolver;
 import model.Grid;
 import model.Tile;
 import org.junit.After;
@@ -7,8 +11,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class StaticGridTest {
-    Grid staticGrid;
+public class ExpositionHandlerTest {
+    Grid grid;
     
     @Before
     public void setUp() {
@@ -22,16 +26,21 @@ public class StaticGridTest {
                             "110000000\n" +
                             "000000000";
         
-        staticGrid = new Grid(initGrid);
+        grid = new Grid(initGrid);
+        
+        Move move = new Move(0, 8, false);
+        int result = MoveResolver.resolve(grid, move);
     }
     
     @Test
-    public void initialisesCorrectly() {
-        Tile upperLeft = staticGrid.getTile(0, 0);
-        Tile xTwoYThree = staticGrid.getTile(2, 3);
-        
-        assertEquals(1, upperLeft.getNeighborsContainingMine());
-        assertFalse(upperLeft.containsMine());
-        assertTrue(xTwoYThree.containsMine());
+    public void revealsAdjacentToZeros() {
+        Tile testTile = grid.getTile(0, 7);
+        assertTrue(testTile.isExposed());
+    }
+    
+    @Test
+    public void doesNotRevealNonAdjacents() {
+        Tile testTile = grid.getTile(7, 0);
+        assertFalse(testTile.isExposed());
     }
 }

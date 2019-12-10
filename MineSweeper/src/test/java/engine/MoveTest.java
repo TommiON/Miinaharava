@@ -1,3 +1,5 @@
+package engine;
+
 import engine.Move;
 import org.junit.After;
 import org.junit.AfterClass;

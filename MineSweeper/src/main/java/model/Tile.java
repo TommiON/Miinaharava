@@ -1,6 +1,6 @@
 /**
  * This class models a single tile in the grid and provides functionality
- * that concers a single tile
+ * that concerns a single tile
  */
 
 package model;

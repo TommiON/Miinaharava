@@ -1,7 +1,7 @@
 package main;
 
-import model.Grid;
-import engine.GameRound;    
+import engine.GameController;
+import model.Grid;  
 import java.awt.Button;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -11,12 +11,9 @@ import ui.MainWindow;
 
 public class Main {
     public static void main(String[] args) {
-        Grid grid = new Grid(9, 9, 10);
-        GameRound gameround = new GameRound(grid);
-        
+        Grid grid = new Grid(9, 9, 10); 
+        GameController controller = new GameController();
         MainWindow window = new MainWindow();
-        // window.run(grid);
-        
-        gameround.run();
+        window.run(grid, controller);
     }
 }
