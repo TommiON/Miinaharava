@@ -60,6 +60,14 @@ Koodityylin tarkistus (Checkstyle). Tyyliraportti löytyy tiedostosta _target/si
 mvn jxr:jxr checkstyle:checkstyle
 ```
 
+#### Dokumentointi
+
+JavaDocin generointi:
+
+```shell
+mvn javadoc:javadoc
+```
+
 ## Mahdollinen jatkokehitys
 
 Perusversion valmistuttua sovellusta täydennetään ajan salliessa esimerkiksi seuraavilla toiminnoilla:
