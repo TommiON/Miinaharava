@@ -1,13 +1,14 @@
-/**
- * This class is responsible for managing and looping the run of game
- */
-
 package engine;
 
 import model.Grid;
 import model.Timing;
 import ui.TextUI;
 
+/**
+ * The class for looping and controlling the game flow
+ * Useful only with TextUI, obsolete with graphcal ui
+ * Replaced with GameController class in the graphical version of the project
+ */
 public class GameRound {
     private boolean gameWon;
     private boolean gameLost;
@@ -15,6 +16,10 @@ public class GameRound {
     static Grid grid;
     TextUI ui;
     
+    /**
+     * 
+     * @param grid the grid to be worked on, dependency-injected
+     */
     public GameRound(Grid grid) {
         gameWon = false;
         gameLost = false;
@@ -24,7 +29,7 @@ public class GameRound {
     }
     
     /**
-     * start a round, will continue until game either lost or won
+     * starts a game, will continue until game either lost or won
      */
     public void run() {
         ui.welcome();
@@ -56,5 +61,4 @@ public class GameRound {
             turn++;
         }
     }
-    
 }

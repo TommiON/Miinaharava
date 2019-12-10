@@ -1,14 +1,19 @@
+package model;
+
 /**
  * This class initialises and manages the grid of tiles
  */
-
-package model;
-
 public class Grid {
     public int width, height;
     public int tilesYetHidden, numberOfMines;
     public Tile[][] tiles;
     
+    /**
+     * constructor
+     * @param width x-width of the grid
+     * @param height y-height of the grid
+     * @param numberOfMines number of mines to be placed
+     */
     public Grid(int width, int height, int numberOfMines) {
         this.width = width;
         this.height = height;
@@ -118,7 +123,11 @@ public class Grid {
         }
     }
     
-    
+    /**
+     * String representation of the grid
+     * @param allExposed true if the whole grid is to be exposed, false otherwise
+     * @return the grid as a String
+     */
     public String toString(boolean allExposed) {
         String output = "";
         
@@ -159,6 +168,12 @@ public class Grid {
         return output;
     }
     
+    /**
+     * return a Tile object at specified coordinates
+     * @param x
+     * @param y
+     * @return 
+     */
     public Tile getTile(int x, int y) {
         if (x < 0) {
             x = 0;

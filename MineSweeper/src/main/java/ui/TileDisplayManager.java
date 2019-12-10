@@ -1,9 +1,3 @@
-/**
- * The class for looping and controlling the game flow
- * Useful only with TextUI, obsolete with graphcal ui
- * Replaced with GameController class in the graphical version of the project
- */
-
 package ui;
 
 import engine.GameController;

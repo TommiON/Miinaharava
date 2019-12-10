@@ -1,5 +1,3 @@
-
-
 package engine;
 
 import model.Grid;

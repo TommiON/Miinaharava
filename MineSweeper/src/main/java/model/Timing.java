@@ -18,7 +18,8 @@ public class Timing {
     }
     
     /**
-     * returns elapsed time
+     * calculates and returns elapsed time at the moment of calling
+     * @return elapsed time as a Long value
      */
     public long getElapsedTime() {
         LocalDateTime current = LocalDateTime.now();

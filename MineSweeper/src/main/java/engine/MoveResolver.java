@@ -1,12 +1,11 @@
-/**
- * Static helper class with a single method, resolves what happens when player chooses a move
- */
-
 package engine;
 
 import model.Grid;
 import model.Tile; 
 
+/**
+ * Static helper class with a single method, resolves what happens when player chooses a move
+ */
 public class MoveResolver {
 
     /**
@@ -14,7 +13,6 @@ public class MoveResolver {
      * @param move move to be resolved
      * @return 0: game continues, 1: game won, 2: game lost 
      */
-    
     public static int resolve(Grid grid, Move move) {
         Tile focusTile = grid.getTile(move.getX(), move.getY());
         

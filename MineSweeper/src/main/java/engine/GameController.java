@@ -4,13 +4,17 @@ import model.Timing;
 import ui.MainWindow;
 
 /**
- * This class is the "main loop" of the application,
+ * This class was the "main loop" of the application,
  * responsible for enforcing the outcome of a game, and also updating the timer
  */
 public class GameController {
     private Timing timing = new Timing();
     private MainWindow window;
     
+    /**
+     * constructor
+     * @param window gets the application MainWindow as a dependency injection 
+     */
     public GameController(MainWindow window) {
         this.window = window;
     }
@@ -33,5 +37,4 @@ public class GameController {
                 
         // TODO: Timing functionality here (call in intervals of one second)
     }
-    
 }
