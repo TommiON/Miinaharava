@@ -2,7 +2,7 @@
 
 ## Käyttäjät ja käyttäjäroolit
 
-Sovellus on "anonyymi" yksinpeli eikä sisällä toiminnallisuuksia esimerkiksi pelaajanimien tai -tilien luomiseen. Käyttäjärooleja on siis tasan yksi: anonyymi Pelaaja-instanssi, joka luodaan pelikierroksen alkaessa ja katoaa sen loppuessa.
+Sovellus on "anonyymi" yksinpeli eikä sisällä toiminnallisuuksia esimerkiksi pelaajanimien tai -tilien luomiseen. Käyttäjärooleja on siis tasan yksi: anonyymi pelaajainstanssi, joka luodaan pelikierroksen alkaessa ja katoaa sen loppuessa.
 
 ## Perusversion tarjoama toiminnallisuus ja valmiusaste
 
