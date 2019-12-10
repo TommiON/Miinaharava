@@ -2,7 +2,7 @@
 
 ## Lataus ja käynnistys
 
-Lataa tiedosto MineSweeper.jar. Mene hakemistoon, jossa tiedosto sijaitsee, ja anna komento
+Lataa tiedosto [MineSweeper.jar](https://github.com/TommiON/ot-harjoitustyo/releases/download/v0.9/MineSweeper.jar). Mene hakemistoon, jossa tiedosto sijaitsee, ja anna komento
 
 ```shell
 java -jar MineSweeper.jar
