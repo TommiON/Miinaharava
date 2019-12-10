@@ -6,7 +6,7 @@ Sovellus on "anonyymi" yksinpeli eikä sisällä toiminnallisuuksia esimerkiksi 
 
 ## Perusversion tarjoama toiminnallisuus ja valmiusaste
 
-_Yleistä valmiusasteesta: sovellus on ottanut väliaikaisesti takapakkia toiminnallisesti, koska kaikkia sovelluslogiikan osia ei ole vielä siirretty graafiseen käyttöliittymään. Kaikki logiikka on kuitenkin olemassa ja toimii tekstikäyttöliittymässä (joka nykyversiossa oletusarvoisesti ei käynnisty)._
+_Yleistä valmiusasteesta: toiminnallisesti sovellus on ottanut hetkellisesti takapakkia, koska kaikkia sovelluslogiikan osia ei ole vielä siirretty graafiseen käyttöliittymään. Kaikki logiikka on kuitenkin olemassa ja toimii tekstikäyttöliittymässä (joka nykyversiossa oletusarvoisesti ei käynnisty)._
 
 * Perusversio generoi pelin alkaessa 9 x 9 ruudun pelilaudan, johon on satunnaisesti sijoitettu 10 miinaa. _Tehty._
 * Perusversion käyttöliittymä on siinä määrin ilmeinen, että siitä ei ole tässä graafista hahmotelmaa. _Käyttöliittymä tällä hetkellä ruma ja vaillinainen, sisältää vasta itse peliruudukon ja statustekstin._
