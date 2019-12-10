@@ -14,6 +14,8 @@ Sovellus toteuttaa klassisen Miinaharva-pelin. Sovellus ei sisällä omia sään
 
 [Arkkitehtuurikaavio](https://github.com/TommiON/ot-harjoitustyo/blob/master/dokumentointi/arkkitehtuuri.md)
 
+[Käyttöohje](https://github.com/TommiON/ot-harjoitustyo/blob/master/dokumentointi/käyttöohje.md)
+
 [Työaikakirjanpito](https://github.com/TommiON/ot-harjoitustyo/blob/master/dokumentointi/tyoaikakirjanpito.md)
 
 ## Komentorivitoiminnot
