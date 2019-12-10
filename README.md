@@ -2,7 +2,7 @@
 
 [Maven-projektin päähakemistoon](https://github.com/TommiON/ot-harjoitustyo/tree/master/MineSweeper)
 
-[MineSweeper pre-release](https://github.com/TommiON/ot-harjoitustyo/releases/tag/viikko5)
+[MineSweeper pre-release 2](https://github.com/TommiON/ot-harjoitustyo/releases/tag/v0.9)
 
 ## Sovelluksen tarkoitus
 
