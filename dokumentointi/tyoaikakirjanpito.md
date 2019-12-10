@@ -15,6 +15,6 @@
 * 3.12. Testejä, sekvenssikaavio, jar-paketointi jne 6h
 * 4.12. Graafisen käyttöliittymän koodausta, testien kirjoittamista 6h
 * 7.12. Graafisen käyttöliittymän koodausta 4h
-* 10.12. Graagisen käyttöliittymän koodausta, sovelluksen dokumentointia 4h
+* 10.12. Graagisen käyttöliittymän koodausta, sovelluksen dokumentointia, testien kirjoittamista 4h
 
 Yht. 63 h
