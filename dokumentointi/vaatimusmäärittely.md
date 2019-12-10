@@ -14,6 +14,7 @@ _Yleistä valmiusasteesta: sovellus on ottanut väliaikaisesti takapakkia toimin
 * Jos paljastetulla ruudulla ei ole yhtään miinoitettua naapuria, paljastetaan kaikki siihen yhteydessä olevat nollaruudut ja tämän alueen reunalla olevat ei-miinoitetut ruudut. _Toiminnallisuus olemassa ja toimii tekstikäyttöliittymässä, mutta ei vielä graafisessa käyttöliittymässä._
 * Peli sisältää lisäksi reaaliaikaisen, jatkuvasti näkyvillä olevan kellon, joka käynnistyy pelin alkaessa ja pysähtyy sen päättyessä. _Tällä hetkellä sovellus ottaa aikaa ja tulostaa sen pelin päättyessä. Lopullisessa versiossa reaaliaikainen kello._
 * Peli päättyy, kun kaikki miinoittamattomat ruudut on paljastettu (voitto) tai paljastetaan ruutu, jossa on miina (häviö). _Tehty._
+* Pelin päätyttyä käyttäjä voi aloittaa uuden pelin.
 
 ## Mahdollinen jatkokehitys
 
