@@ -25,12 +25,12 @@ public class GameController {
      * 0 = continues, 1 = game won, 2 = game lost
      */
     public void newRound(int resultFromMove) {
-        if(resultFromMove == 1) {
+        if (resultFromMove == 1) {
             window.updateStatus(true, false, timing.getElapsedTime());
              // TODO: handle endgame
         }
         
-        if(resultFromMove == 2) {
+        if (resultFromMove == 2) {
             window.updateStatus(false, true, timing.getElapsedTime());
             // TODO: handle endgame
         }

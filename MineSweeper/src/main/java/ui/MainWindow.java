@@ -44,10 +44,10 @@ public class MainWindow extends Application {
     }
     
     public void updateStatus(boolean won, boolean lost, long time) {
-        if(lost) {
+        if (lost) {
             statusText.setText("Kuolit! Aikaa kului " + time + " sekuntia");
         }
-        if(won) {
+        if (won) {
             statusText.setText("Voitit! Aikaa kului " + time + " sekuntia");
         }
     }   
