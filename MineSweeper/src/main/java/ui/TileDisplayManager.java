@@ -1,11 +1,11 @@
 package ui;
 
+import model.Grid;
+import model.Tile;
 import engine.GameController;
 import engine.Move;
 import engine.MoveResolver;
 import javafx.scene.control.Button;
-import model.Grid;
-import model.Tile;
 
 public class TileDisplayManager {
     Grid grid;
@@ -44,5 +44,4 @@ public class TileDisplayManager {
             return Integer.toString(tile.getNeighborsContainingMine());
         }
     }
-    
 }

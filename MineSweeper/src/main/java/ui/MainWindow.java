@@ -1,15 +1,14 @@
 package ui;
 
 import engine.GameController;
+import model.Grid;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
-import model.Grid;
 
 public class MainWindow extends Application {
     static Grid grid;
