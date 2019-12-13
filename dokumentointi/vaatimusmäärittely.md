@@ -16,6 +16,9 @@ _Yleistä valmiusasteesta: toiminnallisesti sovellus on ottanut hetkellistä tak
 * Peli päättyy, kun kaikki miinoittamattomat ruudut on paljastettu (voitto) tai paljastetaan ruutu, jossa on miina (häviö). _Tehty._
 * Pelin päätyttyä koko ruudukko paljastetaan ja käyttäjä voi aloittaa uuden pelin.
 
+## Puutteita
+* MoveResolverin palautusarvo pitäisi mallintaa enum-tyyppisenä oliona.
+
 ## Mahdollinen jatkokehitys
 
 Perusversion valmistuttua sovellusta täydennetään ajan salliessa esimerkiksi seuraavilla toiminnoilla:
