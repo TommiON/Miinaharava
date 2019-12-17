@@ -23,8 +23,14 @@ public class Tile {
         return this.isExposed;
     }
     
+    /**
+     * 
+     * @return true if EXPLOSION, otherwise false
+     */
     public boolean exposeMayExplode() {
-        // returns true if EXPLOSION, otherwise false
+        if(this.isFlagged) {
+            return false;
+        }
         this.isExposed = true;
         if (this.containsMine) {
             return true;
@@ -32,6 +38,16 @@ public class Tile {
         return false;
     }
     
+    /**
+     * This method is used in the end-game to expose all tiles, including flagged ones
+     */
+    public void forceExpose() {
+        this.isExposed = true;
+    }
+    
+    /**
+     * @return true if the tile is mined
+     */
     public boolean containsMine() {
         return this.containsMine;
     }

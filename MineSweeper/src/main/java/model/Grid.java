@@ -124,6 +124,40 @@ public class Grid {
     }
     
     /**
+     * return a Tile object at specified coordinates
+     * @param x
+     * @param y
+     * @return 
+     */
+    public Tile getTile(int x, int y) {
+        if (x < 0) {
+            x = 0;
+        }
+        if (x > width - 1) {
+            x = width - 1;
+        }
+        if (y < 0) {
+            y = 0;
+        }
+        if (y > height - 1) {
+            y = height - 1;
+        }
+        
+        return this.tiles[x][y];
+    }
+    
+    /**
+     * Exposes every tile of the grid
+     */
+    public void exposeAll() {
+       for (int x = 0; x < width; x++) {
+           for (int y = 0; y < height; y++) {
+               this.tiles[x][y].forceExpose();
+           }
+       } 
+    }
+    
+    /**
      * String representation of the grid
      * @param allExposed true if the whole grid is to be exposed, false otherwise
      * @return the grid as a String
@@ -166,28 +200,5 @@ public class Grid {
         }
         
         return output;
-    }
-    
-    /**
-     * return a Tile object at specified coordinates
-     * @param x
-     * @param y
-     * @return 
-     */
-    public Tile getTile(int x, int y) {
-        if (x < 0) {
-            x = 0;
-        }
-        if (x > width - 1) {
-            x = width - 1;
-        }
-        if (y < 0) {
-            y = 0;
-        }
-        if (y > height - 1) {
-            y = height - 1;
-        }
-        
-        return this.tiles[x][y];
     }
 }

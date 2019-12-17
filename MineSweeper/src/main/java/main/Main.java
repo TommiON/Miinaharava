@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
         Grid grid = new Grid(9, 9, 10); 
         MainWindow window = new MainWindow();
-        GameController controller = new GameController(window);
+        GameController controller = new GameController(grid, window);
         window.run(grid, controller);
     }
 }

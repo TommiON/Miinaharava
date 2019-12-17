@@ -14,6 +14,8 @@ public class MainWindow extends Application {
     static Grid grid;
     static GameController controller;
     static Label statusText;
+    static GridPane gridDisplay;
+    static GridDisplayManager gridDisplayManager;
     
     @Override
     public void start(Stage stage) {
@@ -21,8 +23,8 @@ public class MainWindow extends Application {
         
         BorderPane masterLayout = new BorderPane();
         
-        GridDisplayManager gridDisplayManager = new GridDisplayManager(grid, controller);
-        GridPane gridDisplay = gridDisplayManager.getGrid();
+        gridDisplayManager = new GridDisplayManager(grid, controller);
+        gridDisplay = gridDisplayManager.getGrid();
         masterLayout.setCenter(gridDisplay);
         
         statusText = new Label("");
@@ -45,9 +47,9 @@ public class MainWindow extends Application {
     public void updateStatus(boolean won, boolean lost, long time) {
         if (lost) {
             statusText.setText("Kuolit! Aikaa kului " + time + " sekuntia");
-        }
-        if (won) {
+        } else if (won) {
             statusText.setText("Voitit! Aikaa kului " + time + " sekuntia");
-        }
+        } 
+        gridDisplay = gridDisplayManager.getGrid();
     }   
 }

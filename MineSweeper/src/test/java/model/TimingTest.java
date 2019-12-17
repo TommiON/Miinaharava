@@ -19,7 +19,7 @@ public class TimingTest {
         timing = new Timing();
         
         LocalDateTime testTimingStart = LocalDateTime.now();
-        for(int i = 0; i < 1000000; i++) {
+        for(int i = 0; i < 2000000; i++) {
             // waste some time
         }
         LocalDateTime testTimingEnd = LocalDateTime.now();
