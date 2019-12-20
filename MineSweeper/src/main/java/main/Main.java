@@ -11,9 +11,13 @@ import ui.MainWindow;
 
 public class Main {
     public static void main(String[] args) {
+        GameController controller = new GameController();
+        controller.run();
+        /*
         Grid grid = new Grid(9, 9, 10); 
         MainWindow window = new MainWindow();
         GameController controller = new GameController(grid, window);
         window.run(grid, controller);
+        */
     }
 }

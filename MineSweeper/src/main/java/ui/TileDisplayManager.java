@@ -32,16 +32,15 @@ public class TileDisplayManager {
             public void handle(MouseEvent event) {
                 MouseButton button = event.getButton();
                 if(button==MouseButton.SECONDARY || event.isControlDown()){
-                    System.out.println("Liputus...");
                     int result = MoveResolver.resolve(grid, new Move(x, y, true));
                     String newLabel = defineLabel(tile);
                     tileButton.setText(newLabel);
-                    controller.newRound(result);
+                    controller.applyNewMove(result);
                 } else if (button==MouseButton.PRIMARY){
                     int result = MoveResolver.resolve(grid, new Move(x, y, false));
                     String newLabel = defineLabel(tile);
                     tileButton.setText(newLabel);
-                    controller.newRound(result);
+                    controller.applyNewMove(result);
                 }
             }
         });
