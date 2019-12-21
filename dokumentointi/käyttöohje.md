@@ -20,7 +20,7 @@ Jos parametreja ei anneta tai ne ovat virheellisiä, sovellus käynnistyy oletus
 
 ## Pelaaminen
 
-Pelilauta on 9 x 9 ruudun kokoinen ja siihen on satunnaisesti sijoiteltu 10 miinaa. Tavoitteena on paljastaa kaikki miinoittamattomat ruudut ja olla paljastamatta yhtään miinoitettua ruutua.
+Pelin tavoitteena on paljastaa kaikki miinoittamattomat ruudut ja olla paljastamatta yhtään miinoitettua ruutua.
 
 ![](UI_example.png)
 
