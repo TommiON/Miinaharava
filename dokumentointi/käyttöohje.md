@@ -8,6 +8,14 @@ Lataa tiedosto [MineSweeper.jar](https://github.com/TommiON/ot-harjoitustyo/rele
 java -jar MineSweeper.jar
 ```
 
+Sovellukselle voi antaa komentoriviltä kaksi parametria, joista ensimmäinen määrittelee pelilaudan koon (sivun pituuden) ja toinen sijoitettavien miinojen määrän. Alla oleva komento luo 18 x 18 ruudun pelilaudan, jossa 20 miinaa:
+
+```shell
+java -jar MineSweeper.jar 18 20
+```
+
+Jos parametreja ei anneta tai ne ovat virheellisiä, sovellus käynnistyy oletusarvoilla: 9 x 9 ruudun pelilauta, jossa 10 miinaa.
+
 ## Pelaaminen
 
 Pelilauta on 9 x 9 ruudun kokoinen ja siihen on satunnaisesti sijoiteltu 10 miinaa. Tavoitteena on paljastaa kaikki miinoittamattomat ruudut ja olla paljastamatta yhtään miinoitettua ruutua.
