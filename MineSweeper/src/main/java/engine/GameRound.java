@@ -17,7 +17,6 @@ public class GameRound {
     TextUI ui;
     
     /**
-     * 
      * @param grid the grid to be worked on, dependency-injected
      */
     public GameRound(Grid grid) {

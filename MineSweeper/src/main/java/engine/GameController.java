@@ -1,9 +1,5 @@
 package engine;
 
-import java.util.Timer;
-import java.util.concurrent.TimeUnit;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import model.Grid;
 import model.Timing;
 import ui.MainWindow;
@@ -16,25 +12,25 @@ public class GameController {
     MainWindow window;
     Grid grid;
     Timing timing;
-    // private Timer timer;
-  
+    int gridWidth, gridHeight, numberOfMines;
+    
     /**
-     * constructor
-     * @param window gets the application MainWindow as a dependency injection 
-     * TODO: refactor to handle stuff currently in main.java
+     * Constructor to instantiate the Controller with necessary initial data
+     * @param gridWidth number of play tiles in x-direction
+     * @param gridHeight number of play tiles in y-direction
+     * @param numberOfMines number of mines to be placed randomly around the grid
      */
-    
-    /*
-    public GameController(Grid grid, MainWindow window) {
-        // ClockTick clock = new ClockTick(this);
-        
-        // this.timer = new Timer();
-        // this.timer.schedule(clock, 1000, 1000);
+    public GameController(int gridWidth, int gridHeight, int numberOfMines) {
+        this.gridWidth = gridWidth;
+        this.gridHeight = gridHeight;
+        this.numberOfMines = numberOfMines;
     }
-    */
     
+    /**
+     * Starts the first round, initiates the build-up of GUI
+     */
     public void run() {
-        grid = new Grid(9, 9, 10);
+        grid = new Grid(gridWidth, gridHeight, numberOfMines);
         timing = new Timing();
         window = new MainWindow();
         window.init(grid, this);
@@ -42,9 +38,19 @@ public class GameController {
     }
     
     /**
+     * Starts the subsequent rounds of game (difference to run() method is that GUI already exists and is not iniated again
+     */
+    public void startNewGame() {
+        grid = new Grid(gridWidth, gridHeight, numberOfMines);
+        timing = new Timing();
+        window.init(grid, this);
+        window.buildGrid();
+    }
+    
+    /**
      * This method is called after each user action in the GUI
      * @param resultFromMove int value received from MoveResolver, inidicating what happened when a tile was exposed
-     * 0 = continues, 1 = game won, 2 = game lost, 3 = special value for wilfully cancelled game
+     * 0 = continues, 1 = game won, 2 = game lost, 3 = special value for force-cancelled game
      */
     public void applyNewMove(int resultFromMove) {
         if (resultFromMove == 1) {
@@ -64,29 +70,5 @@ public class GameController {
         if (resultFromMove == 3) {
             startNewGame();
         }
-     
-        // TODO: Timing functionality here (call in intervals of one second)
-    }
-    
-    public void startNewGame() {
-        grid = new Grid(9, 9, 10);
-        timing = new Timing();
-        window.init(grid, this);
-        window.buildGrid();
-    }
-    
-    /*
-    public void waitForAWhile() {
-        try {
-            TimeUnit.SECONDS.sleep(4);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(GameController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
-    */
-    
-    public void proceedOneSecond() {
-        System.out.println("Clock tick..." + timing.getElapsedTime());
-        // window.updateStatusMessageAndGrid(false, false, timing.getElapsedTime());
     }
 }

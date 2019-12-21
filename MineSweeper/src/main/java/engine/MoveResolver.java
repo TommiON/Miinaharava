@@ -21,7 +21,7 @@ public class MoveResolver {
         }
         
         if (move.isFlagging()) {
-            focusTile.flag();
+            focusTile.placeOrRemoveFlag();
             return 0;
         }
         

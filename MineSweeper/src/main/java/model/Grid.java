@@ -23,20 +23,28 @@ public class Grid {
         // create an empty grid
         this.tiles = new Tile[width][height];
         
-        // internal helper variables
-        int x, y;
-        
         // initialize the grid with non-mined tiles
-        for (x = 0; x < this.tiles.length; x++) {
-            for (y = 0; y < this.tiles[0].length; y++) {
+        initWithEmptyTiles();
+        
+        // place mines randomly
+        placeMinesRandomly();
+        
+        // finally calculate the number of mined neighbors for each tile
+        calculateMinedNeighbors();
+    }
+    
+    private void initWithEmptyTiles() {
+        for (int x = 0; x < this.tiles.length; x++) {
+            for (int y = 0; y < this.tiles[0].length; y++) {
                 this.tiles[x][y] = new Tile(x, y);
             }
         }
-        
-        // place mines randomly
+    }
+    
+    private void placeMinesRandomly() {
         int minesPlaced = 0;
-        x = 0;
-        y = 0;
+        int x = 0;
+        int y = 0;
         double propabilityForAMine = (double) numberOfMines / (width * height);
         while (minesPlaced != numberOfMines) {
             double randomNumber = Math.random();
@@ -56,18 +64,11 @@ public class Grid {
                 y = 0;
             }
         }
-        
-        // finally calculate the number of mined neighbors for each tile
-        calculateMinedNeighbors();
     }
     
-    /**
-     * internal helper method to calculate number of surrounding mines for each tile
-     */
     private void calculateMinedNeighbors() {
-        int x, y;
-        for (x = 0; x < this.tiles.length; x++) {
-            for (y = 0; y < this.tiles[0].length; y++) {
+        for (int x = 0; x < this.tiles.length; x++) {
+            for (int y = 0; y < this.tiles[0].length; y++) {
                 int minedNeighbors = 0;
                 if (x > 0 && y > 0 && tiles[x - 1][y - 1].containsMine()) {
                     minedNeighbors++;
@@ -125,9 +126,9 @@ public class Grid {
     
     /**
      * return a Tile object at specified coordinates
-     * @param x
-     * @param y
-     * @return 
+     * @param x the x-coordinate as an Int
+     * @param y the y-coordinate as an Int
+     * @return the Tile instance at the specified coordinates
      */
     public Tile getTile(int x, int y) {
         if (x < 0) {
@@ -150,11 +151,11 @@ public class Grid {
      * Exposes every tile of the grid
      */
     public void exposeAll() {
-       for (int x = 0; x < width; x++) {
-           for (int y = 0; y < height; y++) {
-               this.tiles[x][y].forceExpose();
-           }
-       } 
+        for (int x = 0; x < width; x++) {
+            for (int y = 0; y < height; y++) {
+                this.tiles[x][y].forceExpose();
+            }
+        } 
     }
     
     /**

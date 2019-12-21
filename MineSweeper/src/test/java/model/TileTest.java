@@ -41,9 +41,9 @@ public class TileTest {
     
     @Test
     public void flagsAndUnflags() {
-        tile.flag();
+        tile.placeOrRemoveFlag();
         assertEquals(true, tile.isFlagged());
-        tile.unflag();
+        tile.placeOrRemoveFlag();
         assertEquals(false, tile.isFlagged());
     }
     

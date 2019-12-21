@@ -33,6 +33,7 @@
                  <configuration>
                     <excludes>
                         <exclude>ui/*</exclude>
+                        <exclude>engine/GameRound.class</exclude>
                     </excludes>
                 </configuration>       
                 <executions>
