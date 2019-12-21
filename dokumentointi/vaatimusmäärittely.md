@@ -13,6 +13,6 @@ Sovellus on "anonyymi" yksinpeli eikä sisällä toiminnallisuuksia esimerkiksi 
 * Jos paljastetulla ruudulla ei ole yhtään miinoitettua naapuria, paljastetaan kaikki siihen yhteydessä olevat nollaruudut ja tämän alueen reunalla olevat ei-miinoitetut ruudut.
 * Peli päättyy, kun kaikki miinoittamattomat ruudut on paljastettu (voitto) tai paljastetaan ruutu, jossa on miina (häviö). Peli voidaan myös lopettaa ennenaikaisesti käyttöliittymässä olevalla painikkeella.
 * Pelin päätyttyä koko ruudukko paljastetaan ja näytetään kulunut aika. Käyttäjä voi aloittaa uuden pelin, jolloin luodaan uusi satunnainen pelilauta.
-* Sovellus sisältää graafisen käyttöliittymän ohella myös tekstipohjaisen käyttöliittymän, joka ei kuitenkaan oletusarvoisesti käynnisty. Teksikäyttöliittymä oli tarpeellinen kehityksen alkuvaiheessa ja jätettiin edelleen osaksi sovellusta mahdollista jatkokehitystä varten.
+* Sovellus sisältää graafisen käyttöliittymän ohella myös tekstipohjaisen käyttöliittymän, mutta se ei oletusarvoisesti käynnisty. Teksikäyttöliittymä oli tarpeellinen kehityksen alkuvaiheessa ja jätettiin edelleen osaksi sovellusta mahdollista jatkokehitystä varten.
 
 ## Vaillinaiseksi jääneet toiminnot ja mahdollinen jatkokehitys
