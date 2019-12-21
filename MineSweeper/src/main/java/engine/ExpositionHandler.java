@@ -17,9 +17,6 @@ public class ExpositionHandler {
      * @param y starting position, y-coordinate
      */
     public static void expose(Grid grid, int x, int y) {
-        grid.getTile(x, y).exposeMayExplode();
-        grid.tilesYetHidden--;
-               
         ArrayDeque<Tile> queue = new ArrayDeque<>();
         queue.add(grid.getTile(x, y));
         

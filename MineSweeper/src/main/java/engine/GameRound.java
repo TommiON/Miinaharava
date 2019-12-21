@@ -1,7 +1,7 @@
 package engine;
 
 import model.Grid;
-import model.Timing;
+import model.Clock;
 import ui.TextUI;
 
 /**
@@ -25,20 +25,17 @@ public class GameRound {
         turn = 0;
         this.grid = grid;
         ui = new TextUI();
+        ui.welcome();
     }
     
     /**
      * starts a game, will continue until game either lost or won
      */
     public void run() {
-        ui.welcome();
-        
-        Timing timing = new Timing();
+        Clock timing = new Clock();
                 
         while (!gameWon && !gameLost) {
             ui.printGrid(grid, false);
-            // fully exposed grid can be printed for testing purposes...
-            ui.printGrid(grid, true);
             
             Move nextMove = ui.getNextMove(grid);
             int result = MoveResolver.resolve(grid, nextMove);

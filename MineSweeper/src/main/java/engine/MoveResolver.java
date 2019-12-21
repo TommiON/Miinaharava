@@ -37,6 +37,8 @@ public class MoveResolver {
         }
         
         if (focusTile.getNeighborsContainingMine() == 0) {
+            grid.getTile(move.getX(), move.getY()).exposeMayExplode();
+            grid.tilesYetHidden--;       
             ExpositionHandler.expose(grid, move.getX(), move.getY());
         }
         

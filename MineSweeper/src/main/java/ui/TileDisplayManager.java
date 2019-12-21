@@ -38,8 +38,6 @@ public class TileDisplayManager {
         String label = defineLabel(tile);
         Button tileButton = new Button(label);
         tileButton.setPrefSize(50, 50);
-        // tileButton.setMinSize(50, 50);
-        // tileButton.setMaxSize(50, 50);
         
         tileButton.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override

@@ -1,7 +1,7 @@
 package engine;
 
 import model.Grid;
-import model.Timing;
+import model.Clock;
 import ui.MainWindow;
 
 /**
@@ -11,7 +11,7 @@ import ui.MainWindow;
 public class GameController {
     MainWindow window;
     Grid grid;
-    Timing timing;
+    Clock timing;
     int gridWidth, gridHeight, numberOfMines;
     
     /**
@@ -31,7 +31,7 @@ public class GameController {
      */
     public void run() {
         grid = new Grid(gridWidth, gridHeight, numberOfMines);
-        timing = new Timing();
+        timing = new Clock();
         window = new MainWindow();
         window.init(grid, this);
         window.run();
@@ -42,7 +42,7 @@ public class GameController {
      */
     public void startNewGame() {
         grid = new Grid(gridWidth, gridHeight, numberOfMines);
-        timing = new Timing();
+        timing = new Clock();
         window.init(grid, this);
         window.buildGrid();
     }

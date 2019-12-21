@@ -7,13 +7,13 @@ package model;
 import java.time.LocalDateTime;
 import static java.time.temporal.ChronoUnit.SECONDS;
 
-public class Timing {
+public class Clock {
     private LocalDateTime start;
     
     /**
      * constructor, starts measuring a new timespan
      */
-    public Timing() {
+    public Clock() {
         start = LocalDateTime.now();
     }
     

@@ -91,4 +91,11 @@ public class GridTest {
         System.out.println(exposedGrid);
         assertEquals(90, exposedGrid.length());
     }
+    
+    @Test
+    public void exposesAllCorrectly() {
+        grid.exposeAll();
+        assertTrue(grid.getTile(0, 0).isExposed());
+        assertTrue(grid.getTile(7, 3).isExposed());
+    }
 }
