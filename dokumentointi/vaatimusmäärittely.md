@@ -16,3 +16,9 @@ Sovellus on "anonyymi" yksinpeli eikä sisällä toiminnallisuuksia esimerkiksi 
 * Sovellus sisältää graafisen käyttöliittymän ohella myös tekstipohjaisen käyttöliittymän, mutta se ei oletusarvoisesti käynnisty. Teksikäyttöliittymä oli tarpeellinen kehityksen alkuvaiheessa ja jätettiin edelleen osaksi sovellusta mahdollista jatkokehitystä varten.
 
 ## Vaillinaiseksi jääneet toiminnot ja mahdollinen jatkokehitys
+
+Ajanpuutteen vuoksi jotkin alkuperäisessä vaatimusmäärittelyssä olleet ideat jäivät vaillinaisiksi tai kokonaan puuttumaan:
+
+* Sovellukseen oli tarkoitus rakentaa reaaliaikainen (kerran sekunnissa päivittyvä) kello, mutta TimerTask-säikeen ja käyttöliittymäsäikeen välillä oli mystinen kommunikaatio-ongelma, jota en käytettävissä olevassa ajassa ehtinyt ratkaista. Nyt sovellus näyttää ajan vasta pelin päätyttyä.
+* Sovellusta voi nykyversiossa parametrisoida vain komentoriviltä käynnistettäessä. Ei ollut aikaa rakentaa graafista käyttöliittymää, jossa pelaaja voisi vaikuttaa pelilaudan koostumukseen esim. ennen jokaista kierrosta.
+* Sovellus ei tarjoa minkäänlaista persistenssiä. Alunperin oli tarkoitus rakentaa hall of fame -toiminnallisuus, joka olisi pitänyt kirjaa esim. viidestä parhaasta peliajasta.
