@@ -10,11 +10,9 @@ java -jar MineSweeper.jar
 
 ## Pelaaminen
 
-Peliä pelataan tutulla Miinaharava-pelilaudalla:
+Pelilauta on 9 x 9 ruudun kokoinen ja siihen on satunnaisesti sijoiteltu 10 miinaa. Tavoitteena on paljastaa kaikki miinoittamattomat ruudut ja olla paljastamatta yhtään miinoitettua ruutua.
 
 ![](UI_example.png)
-
-Pelilauta on 9 x 9 ruudun kokoinen ja siihen on satunnaisesti sijoiteltu 10 miinaa. Tavoitteena on paljastaa kaikki miinoittamattomat ruudut ja olla paljastamatta yhtään miinoitettua ruutua.
 
 Ruutu paljastetaan klikkaamalla sitä. Jos ruudussa on miina (M), se RÄJÄHTÄÄ ja peli päättyy tappioon. Jos ruutu on miinoittamaton, paljastettaessa se näyttää, montako miinaa sitä ympäröivissä kahdeksassa ruudussa on. Jos tämä luku on nolla, paljastetaan myös kaikki paljastettuun ruutuun yhteydessä olevat ruudut, joita ympäröivissä ruuduissa on myös nolla miinaa, sekä kaikki tätä aluetta reunustavat miinoittamattomnat ruudut.
 
