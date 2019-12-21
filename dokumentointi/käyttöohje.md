@@ -20,4 +20,4 @@ Ruutu paljastetaan klikkaamalla sitä. Jos ruudussa on miina (M), se RÄJÄHTÄ�
 
 Ruudun voi myös liputtaa (#), jos päättelee sen olevan miinoitettu. Lippu on varokeino, jolla voi varmistaa, ettei vahingossa paljasta miinoitettua ruutua. Liputtaminen tehdään klikkaamalla hiiren oikeata/toissijaista nappia. Liputettua ruutua ei voi paljastaa, mutta lipun voi poistaa klikkaamalla ruutua uudelleen hiiren oikealla/toissijaisella napilla.
 
-Pelin päätyttyä joko voittoon tai tappioon alalaidan statusrivillä näytetään kulunut aika. Tämän jälkeen voi aloittaa uuden pelin painamalla sovelluksen ainoata pelilaudan ulkopuolista painiketta. Pelin aikana samasta paikasta voi peruuttaa pelin (pakotettu häviö).
+Pelin päätyttyä joko voittoon tai tappioon alalaidan statusrivillä näytetään kulunut aika. Tämän jälkeen voi aloittaa uuden pelin painamalla sovelluksen ainoata pelilaudan ulkopuolista painiketta. Pelin aikana samalla painikkeella voi peruuttaa pelin (pakotettu häviö).
