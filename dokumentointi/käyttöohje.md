@@ -14,7 +14,7 @@ Sovellukselle voi antaa komentoriviltä kaksi parametria, joista ensimmäinen m�
 java -jar MineSweeper.jar 18 20
 ```
 
-Pelilaudan sivun pituus voi olla maksimissaan 25 ruutua (sovellus leikkaa pituuden tähän, jos sille yrittää antaa tätä suuremman arvon) ja miinoja voi olla enintään yhtä monta kuin laudalla on ruutuja.
+Pelilaudan sivun pituus voi olla maksimissaan 20 ruutua (sovellus leikkaa pituuden tähän, jos sille yrittää antaa tätä suuremman arvon) ja miinoja voi olla enintään yhtä monta kuin laudalla on ruutuja.
 
 Jos parametreja ei anneta tai ne ovat virheellisiä, sovellus käynnistyy oletusarvoilla: 9 x 9 ruudun pelilauta, jossa 10 miinaa.
 
