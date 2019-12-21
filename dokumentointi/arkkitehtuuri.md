@@ -10,7 +10,7 @@ _Ui_-pakkaus sisältää käyttöliittymäkomponentit. Pakkauksen pääluokka on
 
 Arkkitehtuurissa _ui_- ja _model_-pakettien luokat eivät kommunikoi suoraan. Välittäjänä toimii _engine_-pakkaus, joka sisältää pelin "moottorin". Aiemmassa, tekstipohjaisessa versiossa pelin kulku oli mallinnettu while-silmukkana _GameRound_-luokassa, joka on teksikäyttöliittymän tavoin yhä passiivisena osana sovellusta. Graafinen versio sen sijaan toimii reaktiivisesti (kun käyttäjä klikkaa jotain ruutua) ja tätä kontrolloi _GameController_-luokka. Yksittäinen siirto on mallinnettu _Move_-oliona. _MoveResolver_ laskee ja palauttaa yksittäisen siirron lopputuloksen. _ExpositionHandler_ on edellisestä eriytetty apuluokka, joka huolehtii nollaruutualueiden paljastamisesta käyttäen leveyshakutyyppistä algorimia.
 
-Lisäksi sovelluksessa on _Main_-paketti, joka sisältää vain _Main_-luokan ja huolehtii varsinaisten työolioiden luomisesta ja alustamisesta.
+Lisäksi sovelluksessa on _Main_-paketti, joka sisältää vain _Main_-luokan. Tämä luokka vastaanottaa ja validoi mahdolliset komentoriviparametrit ja siirtää sitten suorituksen sovelluksen todelliselle pääluokalle (_GameController_).
 
 ![](MineSweeper_architecture.png)
 
@@ -31,4 +31,5 @@ Graafisessa versiossa arkkitehtuuri on muutettu reaktiiviseksi: aloite tulee _Ti
 Ajanpuutteen vuoksi ohjelmaan jäi arkkitehtuurin näkökulmasta ainakin seuraavat puutteet:
 
 * Graafista käyttöliittymää päivittävä koodi on optimoimatonta. Jotta ExpostionHandler-luokan tekemä massapaljastus heijastuisi  käyttöliittymään, _koko ruudukon_ päivittävää toiminnallisuutta kutsutaan jokaisen siirron jälkeen, vaikka TileDisplayManager-luokka osaa päivittää yksittäisen ruudun ja useimmissa tapauksissa tämä olisi riittävää. Yhdessä JavaFX:n yleisen tehottomuuden kanssa tämä tekee käyttöliittymästä hieman hitaan. Asian olisi voinut ratkaista esim. lisäämällä MoveResolver-luokan palautusarvoihin uuden arvon, joka kertoo, milloin kyseessä on massapaljastus.
+* Kehityksen tuoksinassa koordinaattijärjestelmä pääsi hajaantumaan kahteen paikkaan: _Grid_-luokka ylläpitää koordinaatistoa, mutta lisäksi jokainen _Tile_-olio tietää koordinaattinsa. Tämä rikkoo "single source of truth" -ajattelua ja on potentiaalinen bugien lähde. Parempi ratkaisu olisi todennäköisesti se, että koordinaatisto on täysin _Gridin_ vastuulla ja yksittäinen _Tile_ ei edes tiedä sijaintiaan kokonaiskuvassa.
 * MoveResolver-luokan palautusarvo ilmaistaan kovakoodattuina kokonaislukuina, mikä on potentiaalinen bugien lähde ja epäilmeistä koodin lukijalle. Parempi ratkaisu olisi enumeraatiotyyppi, joka sisältää mahdolliset lopputulemat.
