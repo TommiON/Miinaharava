@@ -28,7 +28,7 @@ Graafisessa versiossa arkkitehtuuri on muutettu reaktiiviseksi: aloite tulee _Ti
 
 ## Ohjelman rakenteeseen jääneet heikkoudet
 
-Ajanpuutteen vuoksi ohjelmaan jäi ainakin seuraavat puutteet:
+Ajanpuutteen vuoksi ohjelmaan jäi arkkitehtuurin näkökulmasta ainakin seuraavat puutteet:
 
 * Graafista käyttöliittymää päivittävä koodi on optimoimatonta. Jotta ExpostionHandler-luokan tekemä massapaljastus heijastuisi  käyttöliittymään, _koko ruudukon_ päivittävää toiminnallisuutta kutsutaan jokaisen siirron jälkeen, vaikka TileDisplayManager-luokka osaa päivittää yksittäisen ruudun ja useimmissa tapauksissa tämä olisi riittävää. Yhdessä JavaFX:n yleisen tehottomuuden kanssa tämä tekee käyttöliittymästä hieman hitaan. Asian olisi voinut ratkaista esim. lisäämällä MoveResolver-luokan palautusarvoihin uusi arvo, joka kertoo, milloin kyseessä on massapaljastus.
 * MoveResolver-luokan palautusarvo ilmaistaan kovakoodattuina kokonaislukuina, mikä on potentiaalinen bugien lähde. Parempi ratkaisu olisi enumeraatiotyyppi, joka sisältää mahdolliset lopputulemat.
