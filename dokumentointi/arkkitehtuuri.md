@@ -4,7 +4,7 @@
 
 Luokat on jaettu neljään pakkaukseen:
 
-_Model_-pakkaus sisältää sovelluksen datan ja tätä dataa suoraan muokkaavan toiminnallisuuden. _Grid_-luokka mallintaa _Tile_-olioista koostuvan pelilaudan. _Grid_-luokan merkittävin toiminnallisuus liittyy satunnaisen pelilaudan generointiin, mutta se tarjoaa testejä varten myös vaihtoehtoisen konstruktorin, jolle voi antaa ei-satunnaisen pelilaudan merkkijonona. Itse pelitilanne on pohjimmiltaan tallennettuna _Tile_-olioissa. Erillisenä luokkana on vielä _Timing_, joka huolehtii ajanotosta.
+_Model_-pakkaus sisältää sovelluksen datan ja tätä dataa suoraan muokkaavan toiminnallisuuden. _Grid_-luokka mallintaa _Tile_-olioista koostuvan pelilaudan. _Grid_-luokan merkittävin toiminnallisuus on satunnaisen pelilaudan generoiminen, mutta se tarjoaa testejä varten myös vaihtoehtoisen konstruktorin, jolle voi antaa ei-satunnaisen pelilaudan merkkijonona. Itse pelitilanne on pohjimmiltaan tallennettuna _Tile_-olioissa. Erillisenä luokkana on vielä _Timing_, joka huolehtii ajanotosta.
 
 _Ui_-pakkaus sisältää käyttöliittymäkomponentit. Pakkauksen pääluokka on _MainWindow_. Se käynnistetään sovelluksen käynnistyessä ja ylläpitää pääikkunaa. Yksittäisten ruutujen näyttäminen ja klikkauksiin reagoiminen on delegoitu _TileDisplayManager_-olioille, jotka ylläpitävät jokaiselle ruudulle pelitilanteen mukaista graafista ilmettä ja hiirenklikkauksiin reagoivia käsittelijämetodeita. Ikkunan alalaidan statustekstistä ja ylälaidan kontrollipainikkeesta _MainWindow_ huolehtii suoraan itse.
 
