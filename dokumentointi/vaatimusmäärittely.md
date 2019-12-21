@@ -6,7 +6,8 @@ Sovellus on "anonyymi" yksinpeli eikä sisällä toiminnallisuuksia esimerkiksi 
 
 ## Toiminnallisuus
 
-* Perusversio generoi pelin alkaessa 9 x 9 ruudun pelilaudan, johon on satunnaisesti sijoitettu 10 miinaa. Sovelluksen käynnistyksen yhteydessä voi myös antaa komentoriviparemetreina oletusasetuksen kumoavan pelilaudan koon ja miinamäärän. (Sovellus sisältää myös toiminnallisuuden staattisen eli ei-satunnaisen pelilaudan luomiseen, mutta tämä on tarkoitettu vain sisäisesti testien käyttöön eikä näy käyttäjälle.)
+* Perusversio generoi pelin alkaessa 9 x 9 ruudun pelilaudan, johon on satunnaisesti sijoitettu 10 miinaa. Sovelluksen käynnistyksen yhteydessä voi myös antaa komentoriviparemetreina oletusasetuksen kumoavan pelilaudan koon ja miinamäärän. 
+* Sovellus sisältää myös toiminnallisuuden staattisen eli ei-satunnaisen pelilaudan luomiseen, mutta tämä on tarkoitettu vain sisäisesti testien käyttöön eikä näy käyttäjälle.
 * Pelaajalla on Miinaharava-sääntöjen mukaisesti käytössään kaksi toimintoa, tyhjäksi arvaamansa ruudun paljastaminen ja miinoitetuksi arvaamansa ruudun merkitseminen. Nämä toiminnot on toteuttu hiiren vasemman ja oikean napin painalluksina.
 * Jos paljastettava ruutu ei ole miinoitettu, se näyttää, monessako sen naapuriruudussa on miina.
 * Jos paljastetulla ruudulla ei ole yhtään miinoitettua naapuria, paljastetaan kaikki siihen yhteydessä olevat nollaruudut ja tämän alueen reunalla olevat ei-miinoitetut ruudut.
