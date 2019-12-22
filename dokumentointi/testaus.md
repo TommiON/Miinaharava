@@ -14,7 +14,7 @@ Jacocon raportoima testien rivikattavuus on 75 prosenttia ja haaraumakattavuus 7
 
 ## Käyttöliittymätestaus
 
-Manuaalinen käyttöliittymätestaus koostui kahdesta osiosta: graafisen käyttöliittymän erilaisten käyttötapausten kokeilemisesta (melko nopeasti tehty, koska käyttöliittymä on verraten yksinkertainen) sekä komentorivin parametrien validointitestauksesta (sovellukselle syötettiin käynnistettäessä erilaisia, sekä luvallisia että luvattomia paramtereja). Kummassakaan osiossa ei havaittu vakavia puutteita. Graafisen käyttöliittymän testauksessa havaittiin kuitenkin lieviä suorituskykyongelmia ts. hetkittäistä hidastumista. Tämän syistä lyhyt analyysi arkkitehtuurikuvauksen lopussa.
+Manuaalinen käyttöliittymätestaus koostui kahdesta osiosta: graafisen käyttöliittymän erilaisten käyttötapausten kokeilemisesta (melko nopeasti tehty, koska käyttöliittymä on verraten yksinkertainen) sekä komentorivin parametrien validointitestauksesta (sovellukselle syötettiin käynnistettäessä erilaisia, sekä luvallisia että luvattomia parametreja). Kummassakaan osiossa ei havaittu vakavia puutteita. Graafisen käyttöliittymän testauksessa havaittiin kuitenkin lieviä suorituskykyongelmia ts. hetkittäistä hidastumista. Tämän syistä lyhyt analyysi arkkitehtuurikuvauksen lopussa.
 
 ## Järjestelmätestaus
 
