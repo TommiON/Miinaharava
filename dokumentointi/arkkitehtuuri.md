@@ -1,4 +1,4 @@
-# MineSweeper: arkkitehtuuri
+# Miinaharava: arkkitehtuuri
 
 ## Pakkaus- ja luokkarakenne
 
