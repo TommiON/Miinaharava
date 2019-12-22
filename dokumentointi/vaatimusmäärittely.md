@@ -1,4 +1,4 @@
-# Vaatimusmäärittely
+# Miinaharava: vaatimusmäärittely
 
 ## Käyttäjät ja käyttäjäroolit
 
