@@ -10,7 +10,11 @@ Sovellus toteuttaa klassisen Miinaharva-pelin. Sovellus ei sisällä omia sään
 
 ## Huomio suoritusympäristöstä
 
-Sovelluksen graafinen käyttöliittymä on toteutettu JavaFX:lla, mistä syystä sovellus vaatii Java-ympäristöstä version 8 (eli 1.8:n). 
+Sovelluksen graafinen käyttöliittymä on toteutettu JavaFX:lla, mistä syystä sovellus vaatii Java-ympäristöstä version 8 (eli 1.8:n). Tämä on asetettu myös Maven-projektin POM.xml-konfigurointitiedostoon:
+
+![](pom_java_version.png)
+
+Sovellus ei (todennäköisesti) suostu toimimaan Java 11 -ympäristössä.
 
 ## Dokumentaatio
 
