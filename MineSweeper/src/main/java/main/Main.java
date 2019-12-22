@@ -2,7 +2,14 @@ package main;
 
 import engine.GameController;
 
+/**
+ * Main class validates command-line parameters, if any, and then hands the reins to GameController
+ */
 public class Main {
+    /**
+     * staring point of the program
+     * @param args Array of String, to be converted to Ints: width, height, number of Mines
+     */
     public static void main(String[] args) {
         int width, height, numberOfMines;
         
@@ -22,6 +29,11 @@ public class Main {
         controller.run();
     }
     
+    /**
+     * Validates and transforms (String->Int) command-line parameters
+     * @param parameter parameter as String
+     * @return parameter as Int if valid, returns 0 if not valid
+     */
     public static int validatedParameter(String parameter) {
         try {
             int p = Integer.parseInt(parameter);

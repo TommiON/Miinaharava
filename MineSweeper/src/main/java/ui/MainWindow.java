@@ -74,9 +74,9 @@ public class MainWindow extends Application {
     
     public void updateStatusMessageAndGrid(boolean won, boolean lost, long time) {
         if (lost) {
-            statusText.setText("Kuolit! Aikaa kului " + time + " sekuntia");
+            statusText.setText("Kuolit! Aikaa kului " + time/60 + " minuuttia, " + time%60 + " sekuntia");
         } else if (won) {
-            statusText.setText("Voitit! Aikaa kului " + time + " sekuntia");
+            statusText.setText("Voitit! Aikaa kului " + time/60 + " minuuttia, " + time%60 + " sekuntia");
         }
         
         if (lost || won) {
