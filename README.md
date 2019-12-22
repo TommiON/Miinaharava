@@ -8,6 +8,10 @@
 
 Sovellus toteuttaa klassisen Miinaharva-pelin. Sovellus ei sisällä omia sääntölisäyksiä tai -muunnelmia, vaan noudattaa alkuperäisen pelin sääntöjä, jotka [löytyvät esimerkiksi Wikipediasta](https://fi.wikipedia.org/wiki/Miinaharava_(peli)).
 
+## Huomio suoritusympäristöstä
+
+Sovelluksen graafinen käyttöliittymä on toteutettu JavaFX:lla, mistä syystä sovellus vaatii Java-ympäristöstä version 8 (eli 1.8:n). 
+
 ## Dokumentaatio
 
 [Käyttöohje](https://github.com/TommiON/ot-harjoitustyo/blob/master/dokumentointi/käyttöohje.md)
