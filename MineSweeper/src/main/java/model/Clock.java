@@ -1,12 +1,11 @@
-/**
- * provides functionality for timing the game
- */
-
 package model;
 
 import java.time.LocalDateTime;
 import static java.time.temporal.ChronoUnit.SECONDS;
 
+/**
+ * provides functionality for timing a game
+ */
 public class Clock {
     private LocalDateTime start;
     

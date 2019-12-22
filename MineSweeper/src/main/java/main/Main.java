@@ -30,7 +30,7 @@ public class Main {
     }
     
     /**
-     * Validates and transforms (String->Int) command-line parameters
+     * Validates and transforms (String to Int) command-line parameters
      * @param parameter parameter as String
      * @return parameter as Int if valid, returns 0 if not valid
      */
