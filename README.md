@@ -1,8 +1,8 @@
 # Miinaharava
 
-[Maven-projektin päähakemistoon](https://github.com/TommiON/ot-harjoitustyo/tree/master/MineSweeper)
+[Miinaharava release 1.0]https://github.com/TommiON/Miinaharava/releases/tag/1.0)
 
-[MineSweeper pre-release 2](https://github.com/TommiON/ot-harjoitustyo/releases/tag/v0.9)
+[Maven-projektin päähakemistoon](https://github.com/TommiON/ot-harjoitustyo/tree/master/MineSweeper)
 
 ## Sovelluksen tarkoitus
 
