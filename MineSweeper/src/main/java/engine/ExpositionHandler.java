@@ -10,8 +10,7 @@ import java.util.ArrayDeque;
 public class ExpositionHandler {
    
     /**
-     * check surroundings of the tile using width-first graph search, exposes 
-     * continuous areas of zero-tiles
+     * check surroundings of the tile using width-first graph search, exposes continuous areas of zero-tiles
      * @param grid the grid to be worked on, passed on as a dependency-injection
      * @param x starting position, x-coordinate
      * @param y starting position, y-coordinate

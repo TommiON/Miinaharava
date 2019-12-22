@@ -38,7 +38,7 @@ public class GameController {
     }
     
     /**
-     * Starts the subsequent rounds of game (difference to run() method is that GUI already exists and is not iniated again
+     * Starts the subsequent rounds of game (difference to run() method is that GUI already exists and is not initiated again
      */
     public void startNewGame() {
         grid = new Grid(gridWidth, gridHeight, numberOfMines);
