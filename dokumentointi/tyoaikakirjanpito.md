@@ -16,5 +16,10 @@
 * 4.12. Graafisen käyttöliittymän koodausta, testien kirjoittamista 6h
 * 7.12. Graafisen käyttöliittymän koodausta 4h
 * 10.12. Graagisen käyttöliittymän koodausta, sovelluksen dokumentointia, testien kirjoittamista 4h
+* 11.12. Graagisen käyttöliittymän koodausta, sovelluksen dokumentointia, testien kirjoittamista 2h
+* 16.12. Pään seinään hakkaamista JavaFX-ongelman kanssa 4 h
+* 17.12. Pään seinään hakkaamista JavaFX-ongelman kanssa 4 h
+* 21.12 Testejä, koodin parantelua 4 h
+* 22.12 Sekalaista viimeistelyä sieltä & täältä 6h
 
-Yht. 63 h
+Yht. 83 h
