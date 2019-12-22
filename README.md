@@ -1,6 +1,6 @@
 # Miinaharava
 
-[Miinaharava release 1.0]https://github.com/TommiON/Miinaharava/releases/tag/1.0)
+[Miinaharava release 1.0](https://github.com/TommiON/Miinaharava/releases/tag/1.0)
 
 [Maven-projektin päähakemistoon](https://github.com/TommiON/ot-harjoitustyo/tree/master/MineSweeper)
 
