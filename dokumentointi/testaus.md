@@ -4,7 +4,7 @@ Sovellusta on testattu automaattisilla yksikkö- ja integraatiotesteillä (JUnit
 
 ## Yksikkö- ja integraatiotestit
 
-_Model_- ja _Engine_-pakettien luokille laadittiin pääluokan mukaan nimetyt testiluokat, poikkeuksena _GameController_, jonka järkevä testaaminen osoittautui käytettävissä olevassa ajassa liian vaikeaksi ja on siksi automatisoidun testauksen ulkopuolella. _Grid_-luokalle on kaksi testiluokkaa: _GridTest_ käyttää pelitilanteessa käytettävää konstruktoria, _StaticGridTest_ ei-satunnaista konstruktoria. Jälkimmäisellä ei sinänsä ole merkitystä loppukäyttäjän toiminnallisuuden kannalta, mutta sen oikea toiminta on oleellista muille testeille.
+_Model_- ja _Engine_-pakettien luokille laadittiin pääluokan mukaan nimetyt testiluokat, poikkeuksena _GameController_, jonka järkevä testaaminen osoittautui käytettävissä olevassa ajassa liian vaikeaksi ja on siksi automatisoidun testauksen ulkopuolella. _Grid_-luokalle on kaksi testiluokkaa: _GridTest_ käyttää pelitilanteessa käytettävää konstruktoria, _StaticGridTest_ taas ei-satunnaista konstruktoria. Jälkimmäisellä ei sinänsä ole merkitystä loppukäyttäjän toiminnallisuuden kannalta, mutta sen oikea toiminta on oleellista muille testeille.
 
 Integraatiotestauksessa keskityttiin siihen, miten _Engine_ -pakkauksen luokat ja _Grid_-luokka vuorovaikuttavat keskenään. Tässä hyödynnettiin mock-olioiden ohella _Gridin_ vaihtoehtoista, nimenomaan testejä varten luotua staattista konstruktoria, jolle voi antaa ei-satunnaisen pelilaudan merkkijonoparametrina. (_Engine_-pakkauksen luokkien järkevä testaaminen olisi jokseenkin mahdotonta, jos testin käynnistyessä pelilaudan sisältö olisi mitä milloinkin sattuu.)
 
